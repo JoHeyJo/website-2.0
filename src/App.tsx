@@ -1,32 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from './styles';
+import Bio from './Bio';
 
 function App() {
-  const containerStyle = {
-    border: '1px solid #000',
-    padding: '10px',
-  };
 
-  const rowStyle = {
-    border: '1px solid #000',
-    display: 'flex',
-  };
-
-  const navColStyle = {
-    border: '1px solid #000',
-    padding: '10px',
-  };
-
-  const mainColStyle = {
-    border: '1px solid #000',
-    padding: '10px',
-    width: '100%',
-  };
-
-  const sectionStyle = {
-    border: '1px solid #000',
-    padding: '10px',
-  };
 
   const colStyle = {}
   return (
@@ -65,8 +43,7 @@ function App() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut vestibulum turpis, id gravida felis. Suspendisse potenti.</p>
               </section>
               <section id="section2" style={sectionStyle}>
-                <h2>About Us</h2>
-                <p>We are a passionate team dedicated to providing high-quality web development solutions.</p>
+                <Bio />
               </section>
               <section id="section3" style={sectionStyle}>
                 <h2>Our Services</h2>
