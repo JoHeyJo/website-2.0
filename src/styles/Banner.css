@@ -1,4 +1,4 @@
-.Banner {
+#Banner {
   /* Take up 80% of the viewport height */
   height: 80vh;
   display: flex;
@@ -8,7 +8,7 @@
   align-items: flex-start;
 }
 
-.full-stack {
+#full-stack {
   /* font-size: calc(100% + 10vw + 10vh); */
   /* Minimum 2rem, scalable with viewport width, maximum 15rem */
   font-size: clamp(2rem, 14vw, 20rem);
@@ -16,7 +16,7 @@
   white-space: nowrap;
 }
 
-.swe {
+#swe {
   /* font-size: calc(100% + 10vw + 10vh); */
   /* Minimum 1.5rem, scalable with viewport width, maximum 12rem */
   font-size: clamp(2rem, 14vw, 15rem);
@@ -24,8 +24,8 @@
   line-height: 1;
 }
 
-.full-stack,
-.swe {
+#full-stack,
+#swe {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: -.813rem;
@@ -33,8 +33,32 @@
 }
 /* Handle letter spacing on smaller screens <768  */
 @media (max-width: 768px) {
-  .full-stack, .swe {
+  #full-stack, #swe {
     letter-spacing: -.250rem;
     line-height: 1.5;
+  }
+  #full-stack {
+    font-size: 16vw;
+  }
+}
+
+.tech {
+  letter-spacing: .518rem;
+}
+
+#Banner-sub {
+  align-items: baseline; 
+}
+
+#Banner-devicons {
+  padding-left: 1rem;
+  font-size: 2vw;
+  white-space: nowrap;
+}
+
+/* Handle devicons on smallers screens <915 */
+@media (max-width: 915px){
+  i {
+    font-size: 3rem;
   }
 }

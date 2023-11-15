@@ -22,7 +22,6 @@ function App() {
           {/* Navigation Sidebar (Left) */}
           <Col md={2} className="d-none d-md-block" style={navColStyle}>
             <nav>
-              <h2>Navigation</h2>
               <ul>
                 <li><a href="#section1">Home</a></li>
                 <li><a href="#section2">About Us</a></li>

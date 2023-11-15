@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import './styles/Banner.css'
-// import './fontSize.css'
+import { renderTypeScript, renderFlask, renderPython, renderReact } from "./utils/view";
 
 function Banner() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -13,9 +13,14 @@ function Banner() {
   }, [])
 
   return (
-    <div className="Banner">
-      <div className="full-stack">Full Stack</div>
-      <div className="swe">swe</div>
+    <div id="Banner">
+      <div id="full-stack">Full Stack</div>
+      <section id="Banner-sub" className="d-flex"> 
+        <div id="swe">swe</div>
+        <section id="Banner-devicons">
+          {renderTypeScript(width)}{renderReact(width)}{renderPython(width)}{renderFlask(width)}
+        </section>
+      </section>
     </div>
   )
 }
