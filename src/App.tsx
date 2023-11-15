@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from './styles';
 import Bio from './Bio';
 import Banner from './Banner';
+import Nav from './Nav';
 
 function App() {
   const colStyle = {}
@@ -22,11 +23,7 @@ function App() {
           {/* Navigation Sidebar (Left) */}
           <Col md={2} className="d-none d-md-block" style={navColStyle}>
             <nav>
-              <ul>
-                <li><a href="#section1">Home</a></li>
-                <li><a href="#section2">About Us</a></li>
-                <li><a href="#section3">Services</a></li>
-              </ul>
+              <Nav />
             </nav>
           </Col>
           {/* Main Section */}
