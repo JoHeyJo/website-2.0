@@ -46,6 +46,26 @@
   letter-spacing: .518rem;
 }
 
+.tech {
+  letter-spacing: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Handle tech font on smaller screesn < 1600 */
+@media (max-width: 1645px){
+  .tech {
+      letter-spacing: .918rem;
+    }
+}
+
+@media (max-width: 1545px){
+  .tech {
+      letter-spacing: .818rem;
+      font-size: 1vw;
+    }
+}
+
 #Banner-sub {
   align-items: baseline; 
 }
@@ -59,6 +79,6 @@
 /* Handle devicons on smallers screens <915 */
 @media (max-width: 915px){
   i {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
