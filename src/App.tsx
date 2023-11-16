@@ -4,7 +4,7 @@ import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } fro
 import Bio from './Bio';
 import Banner from './Banner';
 import Nav from './Nav';
-import Header from './Header';
+import TopBanner from './TopBanner';
 
 function App() {
   const colStyle = {}
@@ -14,7 +14,7 @@ function App() {
       <header>
         <Row >
           <Col >
-            <Header/>
+            <TopBanner/>
           </Col>
         </Row>
       </header>
