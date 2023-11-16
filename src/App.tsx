@@ -4,6 +4,7 @@ import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } fro
 import Bio from './Bio';
 import Banner from './Banner';
 import Nav from './Nav';
+import Header from './Header';
 
 function App() {
   const colStyle = {}
@@ -11,9 +12,9 @@ function App() {
     <Container fluid style={containerStyle}>
       {/* Header */}
       <header>
-        <Row style={rowStyle}>
-          <Col style={colStyle}>
-            <h1>My Website</h1>
+        <Row >
+          <Col >
+            <h1><Header/></h1>
           </Col>
         </Row>
       </header>
