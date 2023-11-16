@@ -21,10 +21,8 @@ function App() {
       {/* Main Content */}
         <Row style={rowStyle}>
           {/* Navigation Sidebar (Left) */}
-          <Col md={2} className="d-none d-md-block" style={navColStyle}>
-            <nav>
+          <Col md={2} className="d-flex justify-content-center align-items-center" style={navColStyle}>
               <Nav />
-            </nav>
           </Col>
           {/* Main Section */}
           <Col xs={12} md={10} style={mainColStyle}>
