@@ -5,6 +5,7 @@ import Bio from './Bio';
 import Banner from './Banner';
 import Nav from './Nav';
 import TopBanner from './TopBanner';
+import { BrowserRouter, Link } from "react-router-dom";
 
 function App() {
   const colStyle = {}
@@ -14,38 +15,42 @@ function App() {
       <header>
         <Row >
           <Col >
-            <TopBanner/>
+            <BrowserRouter>
+              <TopBanner />
+            </BrowserRouter>
           </Col>
         </Row>
       </header>
 
       {/* Main Content */}
-        <Row style={rowStyle}>
-          {/* Navigation Sidebar (Left) */}
-          <Col md={2} className="d-flex justify-content-center align-items-center" style={navColStyle}>
-              <Nav />
-          </Col>
-          {/* Main Section */}
-          <Col xs={12} md={10} style={mainColStyle}>
-            <main id='Home-main-section'>
-              <section id="Home-Banner" style={sectionStyle}>
-                <Banner />
-              </section>
-              <section id="Home-Bio" style={sectionStyle}>
-                <Bio />
-              </section>
-              <section id="section3" style={sectionStyle}>
-                <h2>Our Services</h2>
-                <ul>
-                  <li>Web Design</li>
-                  <li>Mobile App Development</li>
-                  <li>E-commerce Solutions</li>
-                  <li>SEO Services</li>
-                </ul>
-              </section>
-            </main>
-          </Col>
-        </Row>
+      <Row style={rowStyle}>
+        {/* Navigation Sidebar (Left) */}
+        <Col md={2} className="d-flex justify-content-center align-items-center" style={navColStyle}>
+          <BrowserRouter>
+            <Nav />
+          </BrowserRouter>
+        </Col>
+        {/* Main Section */}
+        <Col xs={12} md={10} style={mainColStyle}>
+          <main id='Home-main-section'>
+            <section id="Home-Banner" style={sectionStyle}>
+              <Banner />
+            </section>
+            <section id="Home-Bio" style={sectionStyle}>
+              <Bio />
+            </section>
+            <section id="section3" style={sectionStyle}>
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Mobile App Development</li>
+                <li>E-commerce Solutions</li>
+                <li>SEO Services</li>
+              </ul>
+            </section>
+          </main>
+        </Col>
+      </Row>
       {/* Footer */}
       <footer>
         <Row style={rowStyle}>
