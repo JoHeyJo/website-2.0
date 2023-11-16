@@ -1,10 +1,12 @@
-#Header-bar {
+.Header-bar {
   border-top: 2px solid #323232;
   border-bottom: 2px solid #323232;
-  /* position: fixed; */
-  /* text-align: center; */
+  position: fixed;
+  text-align: center;
   letter-spacing: 1.5em;
   text-transform: uppercase;
   padding-top: .625rem;
+  /* the width only effects container when position:fixed is not applied */
+  width: 100%;
   font-weight: 400;
 }

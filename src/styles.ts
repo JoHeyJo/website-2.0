@@ -8,7 +8,7 @@ export const containerStyle: CSSProperties = {
 
 export const rowStyle: CSSProperties = {
   border: '1px solid #000',
-  display: 'flex',
+  // display: 'flex',
 };
 
 export const navColStyle: CSSProperties = {

@@ -1,14 +1,14 @@
 import React from "react";
-import NavDropdown from "./NavDropdown";
+// import NavDropdownMenu from "./NavDropdownMenu";
 import "./styles/Header.css";
 import { Row, Col } from 'react-bootstrap';
 
 function Header() {
   return (
-    <header id="Header-bar">
+    <header className="Header-bar">
       <Row className="align-items-center justify-content-center text-center">
         <Col xs="auto" className="d-block d-md-none">
-          <NavDropdown />
+          {/* <NavDropdownMenu /> */}
         </Col>
         <Col>
           <p className="d-none d-md-block">Joannes Figueroa</p>

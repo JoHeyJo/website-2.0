@@ -14,7 +14,7 @@ function App() {
       <header>
         <Row >
           <Col >
-            <h1><Header/></h1>
+            <Header/>
           </Col>
         </Row>
       </header>
