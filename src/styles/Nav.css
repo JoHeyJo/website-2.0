@@ -2,3 +2,13 @@
   position: fixed;
     top: 45vh;
 }
+
+.Nav-link {
+  text-decoration: none;
+  /* color: white; */
+}
+
+.Nav-link:hover {
+  transition: .25s;
+  color: #323232;
+}
