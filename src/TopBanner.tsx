@@ -1,4 +1,3 @@
-import React from "react";
 import NavDropdown from "./NavDropdown";
 import "./styles/TopBanner.css";
 import { Row, Col } from 'react-bootstrap';
