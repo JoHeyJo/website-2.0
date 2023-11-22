@@ -5,3 +5,7 @@
 .dropdown-item:hover {
   background: transparent;
 }
+
+.dropdown-menu {
+  background: transparent;
+}
