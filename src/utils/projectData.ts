@@ -1,3 +1,5 @@
+import img from '../images/buglyImg.png';
+
 export type Project = {
   name: string;
   image: string;
@@ -13,7 +15,7 @@ export type Project = {
 
 export const Bugly: Project = {
   name: "Bugly",
-  image: "./images/buglyImg.png",
+  image: img,
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
