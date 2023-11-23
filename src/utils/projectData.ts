@@ -1,4 +1,5 @@
-import img from '../images/buglyImg.png';
+import buglyImg from '../images/buglyImg.png';
+import sharebbImg from '../images/sharebbImg.png';
 
 export type Project = {
   name: string;
@@ -15,7 +16,7 @@ export type Project = {
 
 export const Bugly: Project = {
   name: "Bugly",
-  image: img,
+  image: buglyImg,
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
@@ -32,7 +33,7 @@ export const Bugly: Project = {
 
 export const shareBB: Project = {
   name: "Share BnB",
-  image: "./images/sharebbImg.png",
+  image: sharebbImg,
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",

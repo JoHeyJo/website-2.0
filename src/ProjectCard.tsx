@@ -1,14 +1,13 @@
+import './styles/ProjectCard.css';
 
 type ProjectCard = {
   image: string;
 }
 
-
 function ProjectCard({ image }: ProjectCard) {
-  console.log(image)
   return (
     <>
-      <img src={image} />
+      <img id="ProjectCard-image" src={image} />
     </>
   )
 }

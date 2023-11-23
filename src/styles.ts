@@ -14,6 +14,7 @@ export const rowStyle: CSSProperties = {
 export const navColStyle: CSSProperties = {
   border: '1px solid #000',
   padding: '10px',
+  // width: '200px',  
 };
 
 export const mainColStyle: CSSProperties = {
