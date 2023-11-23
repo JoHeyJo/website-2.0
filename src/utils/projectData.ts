@@ -1,5 +1,6 @@
 import buglyImg from '../images/buglyImg.png';
 import sharebbImg from '../images/sharebbImg.png';
+import mySiteImg from '../images/mySite.png';
 
 export type Project = {
   name: string;
@@ -14,7 +15,7 @@ export type Project = {
   }
 }
 
-export const Bugly: Project = {
+export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
@@ -45,5 +46,21 @@ export const shareBB: Project = {
   links: {
     github: "https://github.com/JoHeyJo/shareBB",
     demo: "https://sharebb-fe.vercel.app/"
+  }
+}
+
+export const portfolioSite: Project = {
+  name: "Share BnB",
+  image: mySiteImg,
+  tech: "React | TypeScript",
+  description: "Portfolio website",
+  heading: "Displays portfolio projects",
+  specs: [
+    "Fully responsive design.",
+    "Dynamic content",
+  ],
+  links: {
+    github: "https://github.com/JoHeyJo/website-2.0",
+    demo: "https://www.joannesfigueroa.com/" //OLD SITE LINK
   }
 }

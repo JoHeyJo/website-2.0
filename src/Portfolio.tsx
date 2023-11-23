@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap'
-import { Bugly } from './utils/projectData';
+import { bugly, shareBB, portfolioSite  } from './utils/projectData';
 import Project from "./Project";
 
 // import "./Portfolio.css";
@@ -18,9 +18,9 @@ function Portfolio() {
     <Container className="">
       <Row>
         <Col className="d-flex justify-content-between">
-        <Project {...Bugly}/>
-        {/* <Project {...Bugly}/> */}
-        {/* <Project {...Bugly}/> */}
+        <Project {...portfolioSite}/> 
+        <Project {...bugly}/>
+        <Project {...shareBB}/>
         </Col>
       </Row>
     </Container>
