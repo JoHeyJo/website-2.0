@@ -13,7 +13,7 @@ export type Project = {
 
 export const Bugly: Project = {
   name: "Bugly",
-  image: "../images/buglyImg.png",
+  image: "./images/buglyImg.png",
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
@@ -28,9 +28,9 @@ export const Bugly: Project = {
   }
 }
 
-const shareBB: Project = {
+export const shareBB: Project = {
   name: "Share BnB",
-  image: "../images/sharebImg.png",
+  image: "./images/sharebbImg.png",
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",

@@ -1,16 +1,13 @@
 import {useState} from 'react';
-import { Project } from './utils/projectData';
+import { Project as ProjectProps }  from './utils/projectData';
+import ProjectCard from './ProjectCard';
 
-function Project({ name, image, description, specs, links }: Project) {
+function Project({ name, image, description, specs, links }: ProjectProps) {
   const [view, setView] = useState("carousel")
-  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex: number, e) => {
-    setIndex(selectedIndex);
-  };
   return (
     <>
-    
+    <ProjectCard  image={image} />
     </>
   )
 }

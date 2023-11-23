@@ -11,17 +11,15 @@ import Button from 'react-bootstrap/Button';
 function Portfolio() {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex: number, e:any) => {
     setIndex(selectedIndex);
   };
   return (
     <Container className="">
       <Row>
-        <Project props={...Bugly}/>
+        <Project {...Bugly}/>
       </Row>
     </Container>
-
-
 
   );
 }

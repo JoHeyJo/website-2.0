@@ -6,6 +6,7 @@ import Banner from './Banner';
 import Nav from './Nav';
 import TopBanner from './TopBanner';
 import { BrowserRouter, Link } from "react-router-dom";
+import Portfolio from './Portfolio';
 
 function App() {
   const colStyle = {}
@@ -39,14 +40,8 @@ function App() {
             <section id="Home-Bio" style={sectionStyle}>
               <Bio />
             </section>
-            <section id="section3" style={sectionStyle}>
-              <h2>Our Services</h2>
-              <ul>
-                <li>Web Design</li>
-                <li>Mobile App Development</li>
-                <li>E-commerce Solutions</li>
-                <li>SEO Services</li>
-              </ul>
+            <section id="Home-Portfolio" style={sectionStyle}>
+              <Portfolio />
             </section>
           </main>
         </Col>
