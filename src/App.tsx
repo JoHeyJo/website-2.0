@@ -14,7 +14,7 @@ function App() {
     <Container fluid style={containerStyle}>
       {/* Header */}
       <header>
-        <Row >
+        <Row>
           <Col >
             <BrowserRouter>
               <TopBanner />
@@ -31,6 +31,7 @@ function App() {
             <Nav />
           </BrowserRouter>
         </Col>
+        
         {/* Main Section */}
         <Col xs={12} md={10} style={mainColStyle}>
           <main id='Home-main-section'>
@@ -46,6 +47,7 @@ function App() {
           </main>
         </Col>
       </Row>
+
       {/* Footer */}
       <footer>
         <Row style={rowStyle}>

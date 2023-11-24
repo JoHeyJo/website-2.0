@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 
 function TopBanner() {
   return (
-    <section className="TopBanner-bar">
+    <section id="TopBanner-bar">
       <Row className="align-items-center justify-content-center text-center">
         <Col xs="auto" className="d-block d-md-none">
           <NavDropdown />
