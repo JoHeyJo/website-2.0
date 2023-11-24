@@ -1,5 +1,6 @@
-#TopBanner-bar {
+.TopBanner-bar {
   position: fixed;
+  /* this fixes gap on top and left of TopBanner.Necessary?*/
   top: 0;
   left: 0;
   border-top: 2px solid #323232;
