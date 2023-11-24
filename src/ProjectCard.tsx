@@ -1,21 +1,20 @@
 import './styles/ProjectCard.css';
+import OverlayCard from './OverlayCard';
 
 type ProjectCard = {
+  projectName: string;
   image: string;
+  demoLink: string;
 }
 
-function ProjectCard({ image }: ProjectCard) {
+function ProjectCard({ projectName, image, demoLink }: ProjectCard) {
   return (
-    <>
-      <div className="image-container">
-
-      <div className="container-1">
-      <img id="ProjectCard-image" src={image} />
-    </div>
-      <div className="after">
+    <div className="ProjectCard-container">
+      <img id="ProjectCard-image" src={image} alt={`${projectName} image`}/>
+      <div className="ProjectCard-overlay">
+        <OverlayCard link={demoLink}/>
       </div>
     </div>
-    </>
   )
 }
 
