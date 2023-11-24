@@ -1,15 +1,11 @@
 #Banner {
-  /* Take up 80% of the viewport height */
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Example background color */
-  /* align-items: flex-start; */
 }
 
 #full-stack {
-  /* font-size: calc(100% + 10vw + 10vh); */
   /* Minimum 2rem, scalable with viewport width, maximum 15rem */
   font-size: clamp(2rem, 14vw, 20rem);
   line-height: 1;
@@ -17,7 +13,6 @@
 }
 
 #swe {
-  /* font-size: calc(100% + 10vw + 10vh); */
   /* Minimum 1.5rem, scalable with viewport width, maximum 12rem */
   font-size: clamp(2rem, 14vw, 15rem);
   margin-top: -1rem;

@@ -3,11 +3,15 @@
   height: 17rem;
 }
 
-.image-container {
+.ProjectCard-container {
   position: relative;
 }
 
-.image-container .after {
+img {
+  border: thick double #011016;
+}
+
+.ProjectCard-container .ProjectCard-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +21,9 @@
   color: #FFF;
 }
 
-.image-container:hover .after {
-  display: block;
+.ProjectCard-container:hover .ProjectCard-overlay {
+  display: flex;
+  flex-direction: column-reverse;
   background: rgba(0, 0, 0, .6);
+  padding-bottom: 1rem;
 }
