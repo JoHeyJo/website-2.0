@@ -8,7 +8,7 @@ function Project({ name, image, description, specs, links }: ProjectProps) {
 
   return (
     <>
-    <ProjectCard  image={image} />
+    <ProjectCard  projectName={name} demoLink={links.demo} image={image} />
     </>
   )
 }

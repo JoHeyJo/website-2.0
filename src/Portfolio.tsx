@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from './utils/projectData';
 import Project from "./Project";
+import './styles/Portfolio.css'
 
 // import "./Portfolio.css";
 // import "./Header.css";
@@ -18,7 +19,7 @@ function Portfolio() {
   return (
     <Container className="">
       <Row>
-        <Col className="d-flex justify-content-between">
+        <Col id="Portfolio-container" className="d-flex justify-content-between">
           <Project {...portfolioSite} />
           <Project {...bugly} />
           <Project {...shareBB} />
