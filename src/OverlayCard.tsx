@@ -9,11 +9,12 @@ type OverlayCardProp = {
 
 /** on hover will render project info & can toggle portfolio view */
 function OverlayCard({ link }: OverlayCardProp) {
-  const {toggleView} = useContext(PortfolioContext)
+  const { toggleView, word } = useContext(PortfolioContext)
+  console.log(toggleView, word)
   return (
     <div className="OverlayCard-container">
-      <Button variant=""  href={link} target="_blank">Demo</Button>
-      <Button variant="dark">More Info</Button>
+      <Button variant="" href={link} target="_blank">Demo</Button>
+      <Button onClick={toggleView} variant="dark">More Info</Button>
     </div>
   )
 }

@@ -15,8 +15,14 @@ const Projects = [bugly, shareBB, portfolioSite];
 function Portfolio() {
   const [isRenderingCarousel, setIsRenderingCarousel] = useState(false);
 
+  function toggleView() {
+    console.log("toggling view")
+    setIsRenderingCarousel(!isRenderingCarousel);
+  };
+
   const PortfolioContent: PortfolioContextType = {
-    toggleView: setIsRenderingCarousel
+    toggleView,
+    word:'hello'
   }
 
   /** Renders projects in grid view */
