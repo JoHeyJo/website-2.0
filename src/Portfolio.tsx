@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Container, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from './utils/projectData';
 import Project from "./Project";
 import './styles/Portfolio.css'
 import PortfolioCarousel from './PortfolioCarousel';
+import { PortfolioContextType, PortfolioContext } from "./context/user";
 
 const Projects = [bugly, shareBB, portfolioSite];
 
@@ -13,6 +14,10 @@ const Projects = [bugly, shareBB, portfolioSite];
  */
 function Portfolio() {
   const [isRenderingCarousel, setIsRenderingCarousel] = useState(false);
+
+  const PortfolioContent: PortfolioContextType = {
+    toggleView: setIsRenderingCarousel
+  }
 
   /** Renders projects in grid view */
   function renderProjectsAsGrid() {
@@ -28,8 +33,12 @@ function Portfolio() {
   return (
     <Row>
       <Col id="Portfolio-container">
+
         {isRenderingCarousel
-          ? <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+          ?
+          <PortfolioContext.Provider value={PortfolioContent}>
+            <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+          </PortfolioContext.Provider>
           : renderProjectsAsGrid()
         }
       </Col>
