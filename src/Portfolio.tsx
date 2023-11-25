@@ -12,7 +12,7 @@ const Projects = [bugly, shareBB, portfolioSite];
  * App -> Portfolio -> [PortfolioCarousel, Project]
  */
 function Portfolio() {
-  const [isRenderingCarousel, setIsRenderingCarousel] = useState(true);
+  const [isRenderingCarousel, setIsRenderingCarousel] = useState(false);
 
   /** Renders projects in grid view */
   function renderProjectsAsGrid() {

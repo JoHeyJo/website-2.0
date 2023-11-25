@@ -14,7 +14,7 @@ type ProjectCardProp = {
 function ProjectCardView({ projectName, image, demoLink }: ProjectCardProp) {
   return (
     <div className="ProjectCardView-container">
-      <img id="ProjectCardView-image" src={image} alt={`${projectName} image`}/>
+      <img className="ProjectCardView-image" src={image} alt={`${projectName} image`}/>
       <div className="ProjectCardView-overlay">
         <OverlayCard link={demoLink}/>
       </div>

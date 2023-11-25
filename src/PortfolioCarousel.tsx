@@ -13,7 +13,7 @@ type PortfolioCarouselProp = {
  * Portfolio -> PortfolioCarousel -> Project
 */
 function PortfolioCarousel({ isRendering, projects }: PortfolioCarouselProp) {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(2);
 
   const handleSelect = (selectedIndex: number, e: any) => {
     setIndex(selectedIndex);
@@ -21,14 +21,12 @@ function PortfolioCarousel({ isRendering, projects }: PortfolioCarouselProp) {
 
   return (
     <>
-      <Carousel>
+      <Carousel interval={null} activeIndex={index}>
         {projects.map(project =>
           <Carousel.Item>
             <Project isRenderingCarousel={isRendering} project={project} />
-            <Carousel.Caption>
               <h3>{project.heading}</h3>
               <p>{project.description}</p>
-            </Carousel.Caption>
           </Carousel.Item>
         )}
       </Carousel>
