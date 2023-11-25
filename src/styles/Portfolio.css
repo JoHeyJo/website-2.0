@@ -3,4 +3,5 @@
     align-items: center;
     height: 100vh;
     overflow-x: auto;
+    justify-content: space-evenly;
 }

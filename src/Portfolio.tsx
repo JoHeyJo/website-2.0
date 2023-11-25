@@ -17,16 +17,13 @@ function Portfolio() {
     setIndex(selectedIndex);
   };
   return (
-    <Container className="">
       <Row>
-        <Col id="Portfolio-container" className="d-flex justify-content-between">
+        <Col id="Portfolio-container">
           <Project {...portfolioSite} />
           <Project {...bugly} />
           <Project {...shareBB} />
         </Col>
       </Row>
-    </Container>
-
   );
 }
 // repetitive code consider refactoring can each portfolio be it's own component? 

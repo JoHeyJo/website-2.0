@@ -2,7 +2,11 @@ import {useState} from 'react';
 import { Project as ProjectProps }  from './utils/projectData';
 import ProjectCard from './ProjectCard';
 
-/** Displays project image along with corresponding info about project. */
+/** Displays project image along with corresponding info about project. 
+ * 
+ * [Portfolio, PortfolioCarousel] -> Project -> ProjectCard
+ * 
+*/
 function Project({ name, image, description, specs, links }: ProjectProps) {
   const [view, setView] = useState("carousel")
 

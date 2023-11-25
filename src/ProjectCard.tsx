@@ -7,6 +7,10 @@ type ProjectCard = {
   demoLink: string;
 }
 
+/** Project Image displayed in thumbnail view
+ * 
+ * Project -> ProjectCard -> OverlayCard
+ */
 function ProjectCard({ projectName, image, demoLink }: ProjectCard) {
   return (
     <div className="ProjectCard-container">
