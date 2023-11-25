@@ -20,21 +20,25 @@ function Portfolio() {
     setIsRenderingCarousel(!isRenderingCarousel);
   };
 
-  const PortfolioContent: PortfolioContextType = {
-    toggleView,
-    word:'hello'
-  }
+  // const PortfolioContent: PortfolioContextType = {
+  //   toggleView,
+  //   word:'hello'
+  // }
 
   /** Renders projects in grid view */
   function renderProjectsAsGrid() {
     return (
       <>
-        <Project project={portfolioSite} />
-        <Project project={bugly} />
-        <Project project={shareBB} />
+        <PortfolioContext.Provider value={{ toggleView }}>
+          <Project project={portfolioSite} />
+          <Project project={bugly} />
+          <Project project={shareBB} />
+        </PortfolioContext.Provider>
       </>
     )
   }
+
+  // console.log(PortfolioContent)
 
   return (
     <Row>
@@ -42,9 +46,7 @@ function Portfolio() {
 
         {isRenderingCarousel
           ?
-          <PortfolioContext.Provider value={PortfolioContent}>
             <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
-          </PortfolioContext.Provider>
           : renderProjectsAsGrid()
         }
       </Col>
