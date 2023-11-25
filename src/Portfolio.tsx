@@ -5,21 +5,22 @@ import Project from "./Project";
 import './styles/Portfolio.css'
 import PortfolioCarousel from './PortfolioCarousel';
 
+const Projects = [bugly, shareBB, portfolioSite];
 
 /** Displays portfolio sites cards as a collection or carousel view.
  * 
  * App -> Portfolio -> [PortfolioCarousel, Project]
  */
 function Portfolio() {
-  const [view, setView] = useState("grid");
+  const [isRenderingCarousel, setIsRenderingCarousel] = useState(true);
 
   /** Renders projects in grid view */
-  function viewProjectGrid() {
+  function renderProjectsAsGrid() {
     return (
       <>
-        <Project {...portfolioSite} />
-        <Project {...bugly} />
-        <Project {...shareBB} />
+        <Project project={portfolioSite} />
+        <Project project={bugly} />
+        <Project project={shareBB} />
       </>
     )
   }
@@ -27,13 +28,13 @@ function Portfolio() {
   return (
     <Row>
       <Col id="Portfolio-container">
-        {view === "grid"
-          ? viewProjectGrid()
-          : <PortfolioCarousel />
+        {isRenderingCarousel
+          ? <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+          : renderProjectsAsGrid()
         }
       </Col>
     </Row>
   );
 }
-// repetitive code consider refactoring can each portfolio be it's own component? 
+
 export default Portfolio;

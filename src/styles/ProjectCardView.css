@@ -1,9 +1,9 @@
-#ProjectCard-image {
+#ProjectCardView-image {
   width: 27rem;
   height: 18rem;
 }
 
-.ProjectCard-container {
+.ProjectCardView-container {
   position: relative;
 }
 
@@ -11,7 +11,7 @@ img {
   border: solid #011016;
 }
 
-.ProjectCard-container .ProjectCard-overlay {
+.ProjectCardView-container .ProjectCardView-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ img {
   color: #FFF;
 }
 
-.ProjectCard-container:hover .ProjectCard-overlay {
+.ProjectCardView-container:hover .ProjectCardView-overlay {
   display: flex;
   flex-direction: column-reverse;
   background: rgba(0, 0, 0, .6);

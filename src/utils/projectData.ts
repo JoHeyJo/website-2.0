@@ -1,19 +1,8 @@
 import buglyImg from '../images/buglyImg.png';
 import sharebbImg from '../images/sharebbImg.png';
 import mySiteImg from '../images/mySite.png';
+import { Project } from './interfaces';
 
-export type Project = {
-  name: string;
-  image: string;
-  tech: string;
-  description: string;
-  heading: string;
-  specs: string[];
-  links: {
-    github: string,
-    demo: string,
-  }
-}
 
 export const bugly: Project = {
   name: "Bugly",
@@ -57,7 +46,7 @@ export const portfolioSite: Project = {
   heading: "Displays portfolio projects",
   specs: [
     "Fully responsive design.",
-    "Dynamic content",
+    "Dynamic content.",
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
