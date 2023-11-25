@@ -20,11 +20,6 @@ function Portfolio() {
     setIsRenderingCarousel(!isRenderingCarousel);
   };
 
-  // const PortfolioContent: PortfolioContextType = {
-  //   toggleView,
-  //   word:'hello'
-  // }
-
   /** Renders projects in grid view */
   function renderProjectsAsGrid() {
     return (
@@ -37,8 +32,6 @@ function Portfolio() {
       </>
     )
   }
-
-  // console.log(PortfolioContent)
 
   return (
     <Row>
