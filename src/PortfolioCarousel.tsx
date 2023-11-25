@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
 /** display a carousel project images and information 
  * 
@@ -13,6 +14,11 @@ function PortfolioCarousel() {
 
   return (
     <>
+    <Carousel>
+      <Carousel.Item>
+        
+      </Carousel.Item>
+    </Carousel>
     </>
   )
 }
