@@ -4,7 +4,8 @@
   height:50vh;
 }
 
-#ProjectCarouselView-container-carousel {
+.ProjectCarouselView-text-box {
   display: flex;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
