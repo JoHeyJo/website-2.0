@@ -1,7 +1,20 @@
+
+
+#Portfolio-container-grid {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    justify-content: space-evenly;
+}
+
+#Portfolio-container-carousel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 #Portfolio-container {
     display: flex;
     align-items: center;
     height: 100vh;
-    overflow-x: auto;
-    justify-content: space-evenly;
 }

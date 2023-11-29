@@ -23,26 +23,33 @@ function Portfolio() {
   /** Renders projects in grid view */
   function renderProjectsAsGrid() {
     return (
-      <>
+      <Col id="Portfolio-container-grid">
         <PortfolioContext.Provider value={{ toggleView }}>
           <Project project={portfolioSite} />
           <Project project={bugly} />
           <Project project={shareBB} />
         </PortfolioContext.Provider>
-      </>
+      </Col>
+    )
+  }
+
+  /** Renders project in carousel view */
+  function renderProjectsAsCarousel() {
+    return (
+      <Col id="Portfolio-container-carousel">
+        <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+      </Col>
     )
   }
 
   return (
-    <Row>
-      <Col id="Portfolio-container">
-
+    <Row >
+      <div id="Portfolio-container">
         {isRenderingCarousel
-          ?
-            <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+          ? renderProjectsAsCarousel()
           : renderProjectsAsGrid()
         }
-      </Col>
+      </div>
     </Row>
   );
 }
