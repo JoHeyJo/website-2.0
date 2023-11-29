@@ -39,9 +39,10 @@ function ProjectCarouselView({ projects }: ProjectProps) {
       <Col xs={4} className="d-flex align-items-center">
         <div className="ProjectCarouselView-text-box ">
           <ul>
-            {projects[index].specs.map((detail) => <ul>{detail}</ul>)}
+            <li className="text">{projects[index].tech}</li>
+            {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
           </ul>
-          <Button onClick={toggleView}>Click me</Button>
+          <Button variant="dark" className="align-self-center" onClick={toggleView}>Grid View</Button>
         </div>
       </Col>
     </Col>

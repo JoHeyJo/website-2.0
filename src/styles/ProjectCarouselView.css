@@ -1,11 +1,21 @@
 .ProjectCarouselView-image {
   margin-top: 5rem;
   width: 40vw;
-  height:50vh;
+  height: 50vh;
 }
 
 .ProjectCarouselView-text-box {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* align-items: center; */
+}
+
+.text {
+  border-left: solid #323232;
+  font-size: .75vw;
+  margin-top: 1%;
+  padding: 1%;
 }
