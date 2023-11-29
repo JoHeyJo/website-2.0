@@ -25,25 +25,18 @@ function ProjectCarouselView({ projects }: ProjectProps) {
     setIndex(selectedIndex);
   };
 
-  /** syncs up details with active project */
-  function syncProjectDetails(project: Project) {
-    return (
-      <Carousel.Item>
-        <img className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`}/>
-      </Carousel.Item>
-    )
-  }
-
   return (
-    <Col className="d-flex">
+    <Col className="d-flex justify-content-end">
       <Col xs={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
           {projects.map((project: any) =>
-            syncProjectDetails(project)
+            <Carousel.Item>
+              <img className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
+            </Carousel.Item>
           )}
         </Carousel>
       </Col>
-      <Col xs={6} className="d-flex align-items-center">
+      <Col xs={4} className="d-flex align-items-center">
         <div className="ProjectCarouselView-text-box ">
           <ul>
             {projects[index].specs.map((detail) => <ul>{detail}</ul>)}
