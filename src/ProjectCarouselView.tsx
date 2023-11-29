@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
 import { Col } from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel';
 import Button from "react-bootstrap/Button";
+import { PortfolioContext } from "./context/user";
 
 type ProjectProps = {
   projects: Project[];
@@ -16,6 +17,8 @@ type ProjectProps = {
  */
 function ProjectCarouselView({ projects }: ProjectProps) {
   const [index, setIndex] = useState(0);
+
+  const { toggleView } = useContext(PortfolioContext);
 
   /** Handles selection of carousel image */
   const handleSelect = (selectedIndex: number) => {
@@ -45,7 +48,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           <ul>
             {projects[index].specs.map((detail) => <ul>{detail}</ul>)}
           </ul>
-          <Button>Click me</Button>
+          <Button onClick={toggleView}>Click me</Button>
         </div>
       </Col>
     </Col>
