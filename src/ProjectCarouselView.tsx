@@ -29,7 +29,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
   function syncProjectDetails(project: Project) {
     return (
       <Carousel.Item>
-        <img className="ProjectCarouselView-image" src={project.image} />
+        <img className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`}/>
       </Carousel.Item>
     )
   }
