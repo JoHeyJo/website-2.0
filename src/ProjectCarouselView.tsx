@@ -11,29 +11,39 @@ import Carousel from 'react-bootstrap/Carousel';
  */
 function ProjectCarouselView({ projects }: any) {
   const [index, setIndex] = useState(0);
+  const [details, setDetails] = useState<any>([]);
 
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
   };
+
+  /** syncs up details with active project */
+  function syncProjectDetails(project: Project){
+    setDetails(project.specs);
+    return (
+      <Carousel.Item>
+        <img className="ProjectCarouselView-imag" src={project.image} />
+        hello
+      </Carousel.Item>
+    )
+  }
   return (
-<>
-    <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
-      {projects.map((project: any) =>
-        <Carousel.Item>
-          <Col id="ProjectCarouselView-container-carousel">
-            <img className="ProjectCarouselView-image" src={project.image} />
-          </Col>
-        </Carousel.Item>
-      )}
-    </Carousel>
     <Col>
-        <div className="ProjectCarouselView">
+      <Col xs={6}>
+        <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
+          {projects.map((project: any) =>
+            ()=>syncProjectDetails(project)
+          )}
+        </Carousel>
+      </Col>
+      <Col>
+        <div className="ProjectCarouselVie">
           <ul>
-            {/* {specs.map(s => <ul>{s}</ul>)} */}
+            {details.map((detail:any) => <ul>{detail}</ul>)}
           </ul>
         </div>
+      </Col>
     </Col>
-    </>
   )
 }
 
