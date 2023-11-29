@@ -33,8 +33,6 @@ function Portfolio() {
   /** Renders project in carousel view */
   function renderProjectsAsCarousel() {
     return (
-      // <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
-      // <Project projects={Projects}/>
       <ProjectCarouselView projects={Projects} />
     )
   }

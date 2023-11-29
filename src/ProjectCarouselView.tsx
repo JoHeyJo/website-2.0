@@ -26,8 +26,9 @@ function ProjectCarouselView({ projects }: ProjectProps) {
   };
 
   return (
-    <Col className="d-flex justify-content-end">
-      <Col xs={6}>
+    // <Col className="d-flex justify-content-end"> This prevents Col from stack
+    <Col> 
+      <Col xs={12} md={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
           {projects.map((project: any) =>
             <Carousel.Item>
@@ -36,13 +37,13 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           )}
         </Carousel>
       </Col>
-      <Col xs={4} className="d-flex align-items-center">
+      <Col xs={12} md={4} className="d-md-flex">
         <div className="ProjectCarouselView-text-box ">
           <ul>
             <li className="text">{projects[index].tech}</li>
             {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
           </ul>
-          <Button variant="dark" className="align-self-center" onClick={toggleView}>Grid View</Button>
+          <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
         </div>
       </Col>
     </Col>
