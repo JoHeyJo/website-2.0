@@ -1,7 +1,8 @@
-import { SyntheticEvent, useState } from 'react';
+import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Project from './Project';
 import { Project as ProjectType } from './utils/interfaces';
+import { Col } from 'react-bootstrap'
 
 type PortfolioCarouselProp = {
   isRendering: boolean;
@@ -21,16 +22,15 @@ function PortfolioCarousel({ isRendering, projects }: PortfolioCarouselProp) {
 
   return (
     <>
-      <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
+     {/* <Col>
+       <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
         {projects.map(project =>
-          <Carousel.Item>
-            <Project isRenderingCarousel={isRendering} project={project} />
-            <h3>{project.heading}</h3>
-            <p>{project.description}</p>
-          </Carousel.Item>
-        )}
-      </Carousel>
-    </>
+           <Carousel.Item>
+           <Project isRenderingCarousel={isRendering} project={project} />
+           </Carousel.Item>
+           )} 
+      </Carousel> */}
+       </>
   )
 }
 export default PortfolioCarousel;

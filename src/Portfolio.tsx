@@ -5,6 +5,9 @@ import Project from "./Project";
 import './styles/Portfolio.css'
 import PortfolioCarousel from './PortfolioCarousel';
 import { PortfolioContextType, PortfolioContext } from "./context/user";
+import { Project as P } from "./utils/interfaces";
+import ProjectCardView from "./ProjectCardView";
+import ProjectCarouselView from "./ProjectCarouselView";
 
 const Projects = [bugly, shareBB, portfolioSite];
 
@@ -25,9 +28,12 @@ function Portfolio() {
     return (
       <Col id="Portfolio-container-grid">
         <PortfolioContext.Provider value={{ toggleView }}>
-          <Project project={portfolioSite} />
+          <ProjectCardView projectName={bugly.name} demoLink={bugly.links.demo} image={bugly.image} />
+          <ProjectCardView projectName={shareBB.name} demoLink={shareBB.links.demo} image={shareBB.image} />
+          <ProjectCardView projectName={portfolioSite.name} demoLink={portfolioSite.links.demo} image={portfolioSite.image} />
+          {/* <Project project={portfolioSite} />
           <Project project={bugly} />
-          <Project project={shareBB} />
+          <Project project={shareBB} /> */}
         </PortfolioContext.Provider>
       </Col>
     )
@@ -36,14 +42,14 @@ function Portfolio() {
   /** Renders project in carousel view */
   function renderProjectsAsCarousel() {
     return (
-      <Col id="Portfolio-container-carousel">
-        <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
-      </Col>
+          // <PortfolioCarousel isRendering={isRenderingCarousel} projects={Projects} />
+          // <Project projects={Projects}/>
+          <ProjectCarouselView projects={Projects}/>
     )
   }
 
   return (
-    <Row >
+    <Row>
       <div id="Portfolio-container">
         {isRenderingCarousel
           ? renderProjectsAsCarousel()

@@ -3,21 +3,22 @@ import ProjectCardView from './ProjectCardView';
 import ProjectCarouselView from './ProjectCarouselView';
 
 type ProjectProp = {
-  isRenderingCarousel?: boolean
+  isRenderingCarousel?: boolean;
   project: project;
+  projects: project[];
 }
 
-/** Displays project image along with corresponding info about project. 
+/** Displays project carousel or grid view. 
  * 
  * [Portfolio, PortfolioCarousel] -> Project -> [ProjectCardView, ProjectCarouselView]
 */
-function Project({ isRenderingCarousel=false, project }: ProjectProp) {
+function Project({ isRenderingCarousel=false, project, projects }: ProjectProp) {
 
   return (
     <>
       {
         isRenderingCarousel
-          ? <ProjectCarouselView {...project} />
+          ? <ProjectCarouselView projects={projects} />
           : <ProjectCardView projectName={project.name} demoLink={project.links.demo} image={project.image} />
       }
 

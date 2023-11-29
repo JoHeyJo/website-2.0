@@ -3,3 +3,8 @@
   width: 40vw;
   height:50vh;
 }
+
+#ProjectCarouselView-container-carousel {
+  display: flex;
+  align-items: center;
+}
