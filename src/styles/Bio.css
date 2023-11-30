@@ -7,10 +7,24 @@
 
 li {
   list-style: none;
-  /* font-size: calc(1% + 1vw + 1vh); */
   font-size: 1.5vw;
   font-weight: 600;
   margin-top: 1%;
   border-left: solid #323232;
   padding-left: 1%;
+}
+
+@media (max-width: 768px) {
+  li {
+    font-size: 3vw;
+    padding-top: 1rem;
+  }
+
+
+}
+
+@media screen and (orientation: landscape) {
+  #Bio-about-me {
+    margin-bottom: 25rem;
+  }
 }
