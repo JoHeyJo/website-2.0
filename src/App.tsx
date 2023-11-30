@@ -7,7 +7,7 @@ import Nav from './Nav';
 import TopBanner from './TopBanner';
 import { BrowserRouter, Link } from "react-router-dom";
 import Portfolio from './Portfolio';
-import Emailjs from './Emailjs'
+import ContactForm from './ContactForm';
 
 function App() {
   const colStyle = {}
@@ -46,7 +46,7 @@ function App() {
               <Portfolio />
             </section>
             <section id="Home-Contact" style={sectionStyle}>
-              <Emailjs />
+              <ContactForm />
             </section>
           </main>
         </Col>

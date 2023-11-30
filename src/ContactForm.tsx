@@ -1,20 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const Emailjs = () => {
+export const ContactForm = () => {
   const form: any = useRef();
 
   const sendEmail = (e:any) => {
     e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result: any) => {
-        console.log(result.text);
-      }, (error: any) => {
-        console.log(error.text);
-      });
-  };
-
+  }
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
@@ -28,4 +20,4 @@ export const Emailjs = () => {
   );
 };
 
-export default Emailjs
+export default ContactForm;
