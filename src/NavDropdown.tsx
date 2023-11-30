@@ -18,7 +18,7 @@ function NavDropdown() {
           <HashLink className="Nav-font" to="#Bio-about-me">About</HashLink>
         </Dropdown.Item>
         <Dropdown.Item>
-          <Link className="Nav-font" to="/portfolio">Portfolio</Link>
+          <HashLink className="Nav-link" to="#Portfolio-container">Portfolio</HashLink>
         </Dropdown.Item>
         <Dropdown.Item><a className="Nav-font" href={RESUME_LINK}>Resume</a>
         </Dropdown.Item>

@@ -21,7 +21,6 @@
 }
 
 /* Handle font size on smaller displays  */
-
 @media (max-width: 768px) {
   .text {
     margin-top: 1rem;

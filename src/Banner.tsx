@@ -4,7 +4,7 @@ import { renderTypeScript, renderFlask, renderPython, renderReact } from "./util
 
 function Banner() {
   const [width, setWidth] = useState(window.innerWidth);
-  console.log(width)
+  const [isLandscape, setIsLandscape] = useState(window.innerWidth > window.innerHeight);
   useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth)
@@ -18,7 +18,7 @@ function Banner() {
       <section id="Banner-sub" className="d-flex"> 
         <div id="swe">swe</div>
         <section id="Banner-devicons">
-          {renderTypeScript(width)}{renderReact(width)}{renderPython(width)}{renderFlask(width)}
+          {renderTypeScript(width, isLandscape)}{renderReact(width, isLandscape)}{renderPython(width, isLandscape)}{renderFlask(width, isLandscape)}
         </section>
       </section>
     </div>

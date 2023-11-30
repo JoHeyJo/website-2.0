@@ -10,7 +10,6 @@ function Nav() {
       <Navbar id="Nav-navbar" className="flex-column">
         <HashLink className="Nav-link" to="#Bio-about-me">About</HashLink>
         <HashLink className="Nav-link" to="#Portfolio-container">Portfolio</HashLink>
-        {/* <a className="Nav-link" href={GITHUBURL}>Resume</a> */}
         <HashLink className="Nav-link" to="#footer-content">Contact</HashLink>
       </Navbar>
     </div>
