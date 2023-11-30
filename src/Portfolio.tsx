@@ -14,7 +14,7 @@ const Projects = [bugly, shareBB, portfolioSite];
  */
 function Portfolio() {
   const [isRenderingCarousel, setIsRenderingCarousel] = useState(false);
-  const [index, setIndex] = useState(0  );
+  const [index, setIndex] = useState(0);
 
   const PortfolioContent: PortfolioContextType = {
     toggleView,
@@ -24,7 +24,7 @@ function Portfolio() {
   }
 
   /** Handles selection of carousel image */
-  function handleSelect(index: number){
+  function handleSelect(index: number) {
     console.log(index)
     setIndex(index)
   }
@@ -38,9 +38,14 @@ function Portfolio() {
   function renderProjectsAsGrid() {
     return (
       <Col id="Portfolio-container-grid">
-        <ProjectCardView projectName={bugly.name} demoLink={bugly.links.demo} image={bugly.image} />
-        <ProjectCardView projectName={shareBB.name} demoLink={shareBB.links.demo} image={shareBB.image} />
-        <ProjectCardView projectName={portfolioSite.name} demoLink={portfolioSite.links.demo} image={portfolioSite.image} />
+        {Projects.map((project, i) =>
+          <ProjectCardView
+            key={i}
+            index={i}
+            projectName={project.name}
+            demoLink={project.links.demo}
+            image={project.image} />
+        )}
       </Col>
     )
   }

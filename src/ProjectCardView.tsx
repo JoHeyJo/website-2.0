@@ -2,6 +2,7 @@ import './styles/ProjectCardView.css';
 import OverlayCard from './OverlayCard';
 
 type ProjectCardProp = {
+  index: number;
   projectName: string;
   image: string;
   demoLink: string;
@@ -11,12 +12,12 @@ type ProjectCardProp = {
  * 
  * Project -> ProjectCardView -> OverlayCard
  */
-function ProjectCardView({ projectName, image, demoLink }: ProjectCardProp) {
+function ProjectCardView({ index, projectName, image, demoLink }: ProjectCardProp) {
   return (
     <div className="ProjectCardView-container">
       <img className="ProjectCardView-image" src={image} alt={`${projectName} image`}/>
       <div className="ProjectCardView-overlay">
-        <OverlayCard link={demoLink}/>
+        <OverlayCard index={index} link={demoLink}/>
       </div>
     </div>
   )

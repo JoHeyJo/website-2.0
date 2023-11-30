@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { PortfolioContext } from "./context/user";
 
 type OverlayCardProp = {
+  index: number;
   link: string;
 }
 
@@ -11,14 +12,20 @@ type OverlayCardProp = {
  * 
  * ProjectCardView -> OverlayCard
 */
-function OverlayCard({ link }: OverlayCardProp) {
+function OverlayCard({ index, link }: OverlayCardProp) {
 
-  const { toggleView } = useContext(PortfolioContext);
+  const { toggleView, setIndex } = useContext(PortfolioContext);
+
+  /** Handle switch to carousel view & update index correspond to project image*/
+  function handleViewToggle(){
+    toggleView();
+    setIndex(index);
+  }
 
   return (
     <div className="OverlayCard-container">
       <Button variant="dark" href={link} target="_blank">Demo</Button>
-      <Button onClick={toggleView} variant="dark">More Info</Button>
+      <Button onClick={handleViewToggle} variant="dark">More Info</Button>
     </div>
   )
 }
