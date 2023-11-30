@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Row, Col } from 'react-bootstrap'
 import { bugly, shareBB, portfolioSite } from './utils/projectData';
 import './styles/Portfolio.css'
-import { PortfolioContext } from "./context/user";
+import { PortfolioContextType, PortfolioContext } from "./context/user";
 import ProjectCardView from "./ProjectCardView";
 import ProjectCarouselView from "./ProjectCarouselView";
 
@@ -14,7 +14,22 @@ const Projects = [bugly, shareBB, portfolioSite];
  */
 function Portfolio() {
   const [isRenderingCarousel, setIsRenderingCarousel] = useState(false);
+  const [index, setIndex] = useState(0  );
 
+  const PortfolioContent: PortfolioContextType = {
+    toggleView,
+    index,
+    setIndex,
+    handleSelect
+  }
+
+  /** Handles selection of carousel image */
+  function handleSelect(index: number){
+    console.log(index)
+    setIndex(index)
+  }
+
+  /** Toggles carousel view or grid view */
   function toggleView() {
     setIsRenderingCarousel(!isRenderingCarousel);
   };
@@ -38,7 +53,7 @@ function Portfolio() {
   }
 
   return (
-    <PortfolioContext.Provider value={{ toggleView }}>
+    <PortfolioContext.Provider value={PortfolioContent}>
       <div id="Portfolio-container">
         {isRenderingCarousel
           ? renderProjectsAsCarousel()

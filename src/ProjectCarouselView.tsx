@@ -1,4 +1,4 @@
- import { useState, useContext } from "react";
+ import { useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
 import { Col, Row } from 'react-bootstrap'
@@ -16,14 +16,8 @@ type ProjectProps = {
  * Portfolio -> ProjectCarouselView
  */
 function ProjectCarouselView({ projects }: ProjectProps) {
-  const [index, setIndex] = useState(0);
 
-  const { toggleView } = useContext(PortfolioContext);
-
-  /** Handles selection of carousel image */
-  const handleSelect = (selectedIndex: number) => {
-    setIndex(selectedIndex);
-  };
+  const { toggleView, index, handleSelect } = useContext(PortfolioContext);
 
   return (
     <Row className="justify-content-end">
