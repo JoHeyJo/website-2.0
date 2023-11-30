@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+ import { useState, useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
 import { Col, Row } from 'react-bootstrap'
@@ -36,7 +36,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           )}
         </Carousel>
       </Col>
-      <Col md={4} className="d-md-flex">
+      <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
           <ul>
             <li className="text">{projects[index].tech}</li>

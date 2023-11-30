@@ -18,3 +18,18 @@
   margin-top: 1%;
   padding: 1%;
 }
+
+/* Handle font size on smaller displays  */
+
+@media (max-width: 768px) {
+  .text {
+    margin-top: 1rem;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    font-size: 4vw;
+  }
+}

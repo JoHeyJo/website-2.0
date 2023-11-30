@@ -26,7 +26,7 @@
   letter-spacing: -.813rem;
   font-weight: bold;
 }
-/* Handle letter spacing on smaller screens <768  */
+/* Handle letter spacing on display <768  */
 @media (max-width: 768px) {
   #full-stack, #swe {
     letter-spacing: -.250rem;
@@ -47,7 +47,7 @@
   text-transform: uppercase;
 }
 
-/* Handle tech font on smaller screesn < 1600 */
+/* Handle tech font on display < 1600 */
 @media (max-width: 1645px){
   .tech {
       letter-spacing: .918rem;
