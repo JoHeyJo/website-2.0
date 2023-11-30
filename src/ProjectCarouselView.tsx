@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
-import { Col } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel';
 import Button from "react-bootstrap/Button";
 import { PortfolioContext } from "./context/user";
@@ -26,9 +26,8 @@ function ProjectCarouselView({ projects }: ProjectProps) {
   };
 
   return (
-    // <Col className="d-flex justify-content-end"> This prevents Col from stack
-    <Col> 
-      <Col xs={12} md={6}>
+    <Row className="justify-content-end">
+      <Col md={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
           {projects.map((project: any) =>
             <Carousel.Item>
@@ -37,7 +36,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           )}
         </Carousel>
       </Col>
-      <Col xs={12} md={4} className="d-md-flex">
+      <Col md={4} className="d-md-flex">
         <div className="ProjectCarouselView-text-box ">
           <ul>
             <li className="text">{projects[index].tech}</li>
@@ -46,7 +45,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
         </div>
       </Col>
-    </Col>
+    </Row>
   )
 }
 

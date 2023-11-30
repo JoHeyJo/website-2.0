@@ -38,16 +38,14 @@ function Portfolio() {
   }
 
   return (
-    <Row>
-      <PortfolioContext.Provider value={{ toggleView }}>
-        <div id="Portfolio-container">
-          {isRenderingCarousel
-            ? renderProjectsAsCarousel()
-            : renderProjectsAsGrid()
-          }
-        </div>
-      </PortfolioContext.Provider>
-    </Row>
+    <PortfolioContext.Provider value={{ toggleView }}>
+      <div id="Portfolio-container">
+        {isRenderingCarousel
+          ? renderProjectsAsCarousel()
+          : renderProjectsAsGrid()
+        }
+      </div>
+    </PortfolioContext.Provider>
   );
 }
 
