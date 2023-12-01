@@ -6,7 +6,7 @@
   width: 35vw;
 }
 
-#ContactForm-user-input{
+#ContactForm-user-control{
   width: 100%;
 }
 
@@ -32,7 +32,7 @@ select:invalid {
   border: 1px solid black;
 }
 
-input, select,
+#ContactForm-user-input, #ContactForm-email, select,
 textarea {
   color: black;
   background-color: #E0E1DC;

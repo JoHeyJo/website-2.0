@@ -31,8 +31,9 @@ export const ContactForm = () => {
       <div id="ContactForm-user-interface" className="d-flex flex-column align-items-center">
 
         <div id='greeting-text'>Get in touch!</div>
-        <div id="ContactForm-user-input" className="d-flex flex-column">
+        <div id="ContactForm-user-control" className="d-flex flex-column">
           <input
+            id="ContactForm-user-input"
             onChange={handleChange}
             type="text"
             name="fromName"
@@ -53,7 +54,7 @@ export const ContactForm = () => {
           </select>
 
           <input
-            id='ContactForm-input'
+            id='ContactForm-email'
             onChange={handleChange}
             type="email"
             name="replyTo"
