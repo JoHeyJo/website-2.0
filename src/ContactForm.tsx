@@ -71,8 +71,10 @@ export const ContactForm = () => {
         {/* using Button component submits the wrong data format. error:
           "The 3rd parameter is expected to be the HTML form element or the style selector of form"
         even if the form is passed JSEmail function doesn't accept it. */}
-        <input id='ContactForm-submit-button' type="submit" value="Send" />
-        <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
+        <div className='d-flex align-items-baseline'>
+          <input id='ContactForm-submit-button' type="submit" value="Send" />
+          <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
+        </div>
         {alert &&
           <div className="alert alert-dark" role="alert">
             {alert}
