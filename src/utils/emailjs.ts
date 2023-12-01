@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const Emailjs = () => {
+function Emailjs() {
   const form: any = useRef();
 
 //   const sendEmail = (e:any) => {

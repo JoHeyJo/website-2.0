@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from "react-bootstrap/Button";
-
+import './styles/ContactForm.css'
 const contact_form = {
-  from_name: '',
-  reply_to: '',
+  fromName: '',
+  replyTo: '',
   to_name: 'JPF0628@gmail.com',
   subject: '',
   message: ''
@@ -27,26 +27,21 @@ export const ContactForm = () => {
   function clearForm() { setForm(contact_form) }
 
   return (
-    <section id='contact-container'>
-      <form onSubmit={sendEmail}>
-        <div id='greeting-text'>Get in touch!</div>
+    <form onSubmit={sendEmail}>
+      <div id="ContactForm-user-interface" className="d-flex flex-column align-items-center">
 
-        <div className='form-inputs'>
-          {/* <label className='sender-info' htmlFor="sender-name"></label> */}
+        <div id='greeting-text'>Get in touch!</div>
+        <div id="ContactForm-user-input" className="d-flex flex-column">
           <input
-            className='sender-info'
             onChange={handleChange}
             type="text"
-            name="from_name"
-            value={form.from_name}
+            name="fromName"
+            value={form.fromName}
             placeholder='Name:' />
-        </div>
 
-        <div className='form-inputs'>
           <select required
-            id='subject'
+            id='ContactForm-select'
             name='subject'
-            className='sender-info'
             onChange={handleChange}>
             {form.subject === '' ? <option value='' disabled selected hidden>What is this about:</option> : ''}
             <option value='' disabled selected hidden>What is this about:</option>
@@ -56,40 +51,35 @@ export const ContactForm = () => {
             <option value='bug'>Report an issue</option>
             <option value='other'>Just wanted to say hi!</option>
           </select>
-        </div>
 
-        <div className='form-inputs'>
-          {/* <label className='sender-info' htmlFor='email-input'></label> */}
           <input
-            className='sender-info'
+            id='ContactForm-input'
             onChange={handleChange}
             type="email"
-            name="reply_to"
-            value={form.reply_to}
+            name="replyTo"
+            value={form.replyTo}
             placeholder='Email:' />
-        </div>
 
-        <div className='form-inputs'>
-          <label htmlFor='message-input'></label>
           <textarea
+            id='ContactForm-textarea'
             placeholder='Would love to hear your thoughts...'
             rows={6}
             onChange={handleChange}
             name="message"
             value={form.message} />
-          {/* using Button component submits the wrong data format. error:
-          "The 3rd parameter is expected to be the HTML form element or the style selector of form"
-          even if the form is passed JSEmail function doesn't accept it. */}
-          <input id='submit-button' type="submit" value="Send" />
-          <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
         </div>
+        {/* using Button component submits the wrong data format. error:
+          "The 3rd parameter is expected to be the HTML form element or the style selector of form"
+        even if the form is passed JSEmail function doesn't accept it. */}
+        <input id='ContactForm-submit-button' type="submit" value="Send" />
+        <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
         {alert &&
           <div className="alert alert-dark" role="alert">
             {alert}
           </div>
         }
-      </form>
-    </section>
+      </div>
+    </form>
   );
 };
 
