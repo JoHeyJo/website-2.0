@@ -1,16 +1,39 @@
 #Nav-navbar {
   position: fixed;
   top: 45vh;
-  font-size: 1.5vw;
+  left: 5vh;
+  font-size: 1vw;
   align-items: flex-start;
 }
 
 .Nav-link {
   text-decoration: none;
-  /* color: white; */
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: black;
 }
 
 .Nav-link:hover {
   transition: .25s;
   color: #323232;
+}
+
+@media (width < 1315px){
+  #Nav-navbar {
+    font-size: .85vw;
+    left: 2vh;
+  }
+  .Nav-link{
+    letter-spacing: .75rem;
+  }
+}
+
+@media (width < 1024px){
+  #Nav-navbar {
+    font-size: .80vw;
+    left: 2vh;
+  }
+  .Nav-link{
+    letter-spacing: .75rem;
+  }
 }

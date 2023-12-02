@@ -27,7 +27,7 @@ function App() {
       {/* Main Content */}
       <Row style={rowStyle}>
         {/* Navigation Sidebar (Left) */}
-        <Col md={2} className="d-flex justify-content-center align-items-center" style={navColStyle}>
+        <Col md={2} className="" style={navColStyle}>
           <BrowserRouter>
             <Nav />
           </BrowserRouter>
