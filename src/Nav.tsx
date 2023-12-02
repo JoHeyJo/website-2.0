@@ -1,6 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import { Navbar } from "react-bootstrap";
 import './styles/Nav.css'
+import { sections } from "./utils/sections";
 
 const GITHUBURL = "https://github.com/JoHeyJo/myWebsiteReact/raw/main/public/Joannes_Figueroa_Resume.pdf"
 
@@ -8,9 +9,9 @@ function Nav() {
   return (
     <div className="d-none d-md-inline">
       <Navbar id="Nav-navbar" className="flex-column">
-        <HashLink className="Nav-link" to="#Bio-about-me">About</HashLink>
-        <HashLink className="Nav-link" to="#Portfolio-container">Portfolio</HashLink>
-        <HashLink className="Nav-link" to="#footer-content">Contact</HashLink>
+        {sections.map((section,i) =>
+        <HashLink className="Nav-link" to={`#${section.link}`}>{section.name}</HashLink>
+        )}
       </Navbar>
     </div>
   )

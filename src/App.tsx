@@ -8,7 +8,7 @@ import TopBanner from './TopBanner';
 import { BrowserRouter, Link } from "react-router-dom";
 import Portfolio from './Portfolio';
 import ContactForm from './ContactForm';
-
+import './styles/App.css'
 function App() {
   const colStyle = {}
   return (

@@ -29,7 +29,6 @@ export const ContactForm = () => {
   return (
     <form onSubmit={sendEmail}>
       <div id="ContactForm-user-interface" className="d-flex flex-column align-items-center">
-
         <div id='greeting-text'>Get in touch!</div>
         <div id="ContactForm-user-control" className="d-flex flex-column">
           <input
