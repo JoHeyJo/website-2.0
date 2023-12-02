@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import './styles/ContactForm.css'
+import { Container, Row, Col } from 'react-bootstrap';
 const contact_form = {
   fromName: '',
   replyTo: '',
@@ -27,6 +28,8 @@ export const ContactForm = () => {
   function clearForm() { setForm(contact_form) }
 
   return (
+    <Row>
+      <Col md={7}>
     <form onSubmit={sendEmail}>
       <div id="ContactForm-user-interface" className="d-flex flex-column ">
         <div id='greeting-text'>Get in touch!</div>
@@ -82,6 +85,8 @@ export const ContactForm = () => {
         }
       </div>
     </form>
+        </Col>
+      </Row>
   );
 };
 
