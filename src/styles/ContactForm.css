@@ -3,7 +3,9 @@
 }
 
 #ContactForm-user-interface{
-  width: 35vw;
+  width: 37vw;
+  margin-left: 6rem;
+  padding-bottom:3rem;
 }
 
 #ContactForm-user-control{
@@ -42,7 +44,4 @@ textarea {
   padding: 10px;
   box-shadow: 3px 6px rgba(50, 50, 50, .5);
   margin: 10px;
-}
-
-.form-inputs {
 }
