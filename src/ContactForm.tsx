@@ -29,7 +29,7 @@ export const ContactForm = () => {
 
   return (
     <Row>
-      <Col md={7}>
+      <Col md={12}>
     <form onSubmit={sendEmail}>
       <div id="ContactForm-user-interface" className="d-flex flex-column ">
         <div id='greeting-text'>Get in touch!</div>
