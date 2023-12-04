@@ -3,13 +3,8 @@
 }
 
 #ContactForm-user-interface{
-  /* width: 37vw; */
   margin-left: 6rem;
   padding-bottom:3rem;
-}
-
-#ContactForm-user-control{
-  /* width: 100%; */
 }
 
 #ContactForm-submit-button {
@@ -44,4 +39,11 @@ textarea {
   padding: 10px;
   box-shadow: 3px 6px rgba(50, 50, 50, .5);
   margin: 10px;
+}
+
+@media (width < 768px){
+  #ContactForm-user-interface {
+      margin-left: 0rem;
+      /* padding-bottom: 3rem; */
+    }
 }
