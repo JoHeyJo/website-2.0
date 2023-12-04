@@ -1,21 +1,27 @@
-#Footer-container {
+#Footer-top-border {
   border-top: 2px solid #323232;
-  /* border-bottom: 2px solid black; */
+  border-bottom: 2px solid #323232;
   bottom: 0;
   position: fixed;
   height: 50px;
   background-color: beige;
+  z-index: 1;
 }
 
-#footer-content {
-  border-top: 2px solid #323232;
+#Footer-content {
+  border-top: .1px solid #323232;
   border-bottom: 2px solid #323232;
+  height: 50px;
+}
+
+#Footer-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50px;
   position: sticky;
   letter-spacing: 1.25em;
+  z-index: 2;
 }
 
 a {

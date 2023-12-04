@@ -8,7 +8,7 @@ export const sections = [
     name: "Portfolio"
   }, 
   {
-    link: "Home-Contact",
+    link: "Footer-content",
     name: "Contact"
   }, 
 ];
