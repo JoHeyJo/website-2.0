@@ -5,7 +5,7 @@ import Bio from './Bio';
 import Banner from './Banner';
 import Nav from './Nav';
 import TopBanner from './TopBanner';
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Portfolio from './Portfolio';
 import ContactForm from './ContactForm';
 import './styles/App.css'
@@ -55,13 +55,11 @@ function App() {
       </Row>
 
       {/* Footer */}
-      {/* <Row> */}
         <Row style={{position:"absolute", width:"100%"}}>
-          {/* <Col> */}
+          <BrowserRouter>
             <Footer />
-          {/* </Col> */}
+          </BrowserRouter>
         </Row>
-      {/* </Row> */}
     </Container>
   );
 }

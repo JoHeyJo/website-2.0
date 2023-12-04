@@ -1,18 +1,30 @@
 import "./styles/Footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 function Footer() {
   return (
     <>
       <footer id="Footer-container">
-    </footer>
+      </footer>
       <section id="footer-content">
-        <p className="d-none d-lg-block">510-931-3588</p>
-        {/* <p><FontAwesomeIcon icon="fa-brands fa-instagram" /></p> */}
-        {/* <FontAwesomeIcon icon="fa-brands fa-instagram" /> */}
-
-        <p id="contact-text">contact</p>
-        <p className="d-none d-lg-block">JPF0628@GMAIL</p>
-
+        <div>
+          <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
+            <FontAwesomeIcon size="xl" icon={faEnvelope} />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/JoHeyJo" target="_blank">
+            <FontAwesomeIcon size="xl" icon={faGithub} />
+          </a>
+        </div>
+        <div>
+          <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
+            <FontAwesomeIcon size="xl" icon={faLinkedin} />
+          </a>
+        </div>
       </section>
     </>
   )
