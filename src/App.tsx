@@ -9,6 +9,8 @@ import { BrowserRouter, Link } from "react-router-dom";
 import Portfolio from './Portfolio';
 import ContactForm from './ContactForm';
 import './styles/App.css'
+import Footer from './Footer';
+
 function App() {
   const colStyle = {}
   return (
@@ -32,7 +34,7 @@ function App() {
             <Nav />
           </BrowserRouter>
         </Col>
-        
+
         {/* Main Section */}
         <Col xs={12} md={10} style={mainColStyle}>
           <main id='Home-main-section'>
@@ -53,13 +55,13 @@ function App() {
       </Row>
 
       {/* Footer */}
-      <footer>
-        <Row style={rowStyle}>
-          <Col style={colStyle}>
-            <p>&copy; 2023 My Website</p>
-          </Col>
+      <Row>
+        <Row id="Footer-container" >
+          {/* <Col> */}
+            <Footer />
+          {/* </Col> */}
         </Row>
-      </footer>
+      </Row>
     </Container>
   );
 }

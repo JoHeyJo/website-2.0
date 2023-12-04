@@ -1,3 +1,7 @@
 #Home-Contact {
   height: 100vh;
 }
+
+#Home-Footer{
+  border-top: 2px solid black;
+}

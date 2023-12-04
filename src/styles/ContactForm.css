@@ -44,6 +44,5 @@ textarea {
 @media (width < 768px){
   #ContactForm-user-interface {
       margin-left: 0rem;
-      /* padding-bottom: 3rem; */
     }
 }

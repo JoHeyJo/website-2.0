@@ -10,7 +10,7 @@ function Banner() {
       setWidth(window.innerWidth)
     }
     window.addEventListener("resize", handleResize)
-  }, [])
+  }, [isLandscape])
 
   return (
     <div id="Banner">
