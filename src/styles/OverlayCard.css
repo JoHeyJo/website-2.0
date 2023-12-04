@@ -1,4 +1,26 @@
-.OverlayCard-container {
+.OverlayCard-actions {
   display: flex;
   justify-content: space-evenly;
+}
+
+.OverlayCard-container:hover .OverlayCard-content {
+  transform: translateY(-100%);
+}
+
+.OverlayCard-content {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: transform 250ms;
+  /* vertical-align: bottom; */
+}
+
+.OverlayCard-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.OverlayCard-description {
+  padding: 1rem;
 }
