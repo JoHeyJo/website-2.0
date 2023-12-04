@@ -55,13 +55,13 @@ function App() {
       </Row>
 
       {/* Footer */}
-      <Row>
-        <Row id="Footer-container" >
+      {/* <Row> */}
+        <Row style={{position:"absolute", width:"100%"}}>
           {/* <Col> */}
             <Footer />
           {/* </Col> */}
         </Row>
-      </Row>
+      {/* </Row> */}
     </Container>
   );
 }
