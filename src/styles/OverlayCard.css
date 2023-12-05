@@ -11,7 +11,7 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  transition: transform 250ms;
+  transition: transform 300ms;
   /* vertical-align: bottom; */
 }
 

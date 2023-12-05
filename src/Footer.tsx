@@ -1,7 +1,7 @@
 import "./styles/Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -20,9 +20,17 @@ function Footer() {
               <FontAwesomeIcon size="xl" icon={faGithub} />
             </a>
           </div>
+          <div id="Footer-copyright">
+            <p>&copy; 2023 Joannes Figueroa</p>
+          </div>
           <div>
             <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
               <FontAwesomeIcon size="xl" icon={faLinkedin} />
+            </a>
+          </div>
+          <div>
+            <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
+              <FontAwesomeIcon size="xl" icon={faInstagram} />
             </a>
           </div>
         </div>
