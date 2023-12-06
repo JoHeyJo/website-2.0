@@ -29,7 +29,7 @@ function Footer() {
             </a>
           </div>
           <div>
-            <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
+            <a href="https://www.instagram.com/joheyjo/" target="_blank">
               <FontAwesomeIcon size="xl" icon={faInstagram} />
             </a>
           </div>

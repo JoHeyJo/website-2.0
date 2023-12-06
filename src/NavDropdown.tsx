@@ -15,9 +15,14 @@ function NavDropdown() {
       </Dropdown.Toggle>
       <Dropdown.Menu>
         {sections.map((section, i) =>
-          <Dropdown.Item>
-            <HashLink className='Nav-link' to={`#${section.link}`}>{section.name}</HashLink>
-          </Dropdown.Item>
+          section.id === "Nav-resume" ?
+            <Dropdown.Item>
+              <a id={section.id} className="Nav-link" href={section.link} />
+            </Dropdown.Item>
+            :
+            <Dropdown.Item>
+              <HashLink className='Nav-link' to={`#${section.link}`}>{section.name}</HashLink>
+            </Dropdown.Item>
         )}
       </Dropdown.Menu>
     </Dropdown>

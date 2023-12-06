@@ -1,4 +1,4 @@
- import { useContext } from "react";
+import { useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
 import { Col, Row } from 'react-bootstrap'
@@ -23,9 +23,13 @@ function ProjectCarouselView({ projects }: ProjectProps) {
     <Row className="justify-content-end">
       <Col md={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
-          {projects.map((project: any) =>
+          {projects.map((project: Project) =>
             <Carousel.Item>
               <img className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
+              <Carousel.Caption>
+                <h3>{project.heading}</h3>
+                <p>{project.description}</p>
+              </Carousel.Caption>
             </Carousel.Item>
           )}
         </Carousel>
@@ -36,7 +40,10 @@ function ProjectCarouselView({ projects }: ProjectProps) {
             <li className="text">{projects[index].tech}</li>
             {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
           </ul>
-          <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
+          <div className="d-flex justify-content-evenly">
+            <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
+            <Button variant="dark" className="align-self-center" onClick={toggleView}>Demo</Button>
+          </div>
         </div>
       </Col>
     </Row>

@@ -20,6 +20,11 @@
   font-weight: 400;
 }
 
+.carousel-caption {
+  color: black;
+  position: static;
+}
+
 /* Handle font size on smaller displays  */
 @media (max-width: 768px) {
   .text {
