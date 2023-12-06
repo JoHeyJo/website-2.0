@@ -41,6 +41,7 @@ function Portfolio() {
         {Projects.map((project, i) =>
           <ProjectCardView
             key={i}
+            index={i}
             {...project} />
         )}
       </Col>

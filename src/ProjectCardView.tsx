@@ -10,12 +10,12 @@ type ProjectCardProp = Project & {
  * 
  * Project -> ProjectCardView -> OverlayCard
  */
-function ProjectCardView({ index, name, image, links, summaryH1, summaryP }: ProjectCardProp) {
+function ProjectCardView({ index, name, image, links, cardHeader, cardSummary }: ProjectCardProp) {
   return (
     <div className="ProjectCardView-container">
       <img className="ProjectCardView-image" src={image} alt={`${name} image`}/>
       <div className="ProjectCardView-overlay">
-        <OverlayCard index={index} link={links.demo} summary={summaryH1} blurb={summaryP}/>
+        <OverlayCard index={index} link={links.demo} summary={cardHeader} blurb={cardSummary}/>
       </div>
     </div>
   )
