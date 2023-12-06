@@ -1,25 +1,21 @@
 import './styles/ProjectCardView.css';
 import OverlayCard from './OverlayCard';
+import { Project } from './utils/interfaces';
 
-type ProjectCardProp = {
+type ProjectCardProp = Project & {
   index: number;
-  projectName: string;
-  image: string;
-  demoLink: string;
-  summary: string;
-  blurb: string;
 }
 
 /** Project Image displayed in thumbnail view
  * 
  * Project -> ProjectCardView -> OverlayCard
  */
-function ProjectCardView({ index, projectName, image, demoLink, summary, blurb }: ProjectCardProp) {
+function ProjectCardView({ index, name, image, links, summaryH1, summaryP }: ProjectCardProp) {
   return (
     <div className="ProjectCardView-container">
-      <img className="ProjectCardView-image" src={image} alt={`${projectName} image`}/>
+      <img className="ProjectCardView-image" src={image} alt={`${name} image`}/>
       <div className="ProjectCardView-overlay">
-        <OverlayCard index={index} link={demoLink} summary={summary} blurb={blurb}/>
+        <OverlayCard index={index} link={links.demo} summary={summaryH1} blurb={summaryP}/>
       </div>
     </div>
   )

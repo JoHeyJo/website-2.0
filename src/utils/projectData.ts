@@ -7,14 +7,14 @@ import { Project } from './interfaces';
 export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
-  summaryH1:"React Router application",
-  summaryP:"Retro styled application, catalogs projects and corresponding bugs",
+  summaryH1:"React Router Blog application",
+  summaryP:"Retro styled application that catalogs projects and corresponding bugs with dynamic interface. Features client-side & server-side authorization",
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
   specs: [
     "Catalogs and organizes projects and all its corresponding posts (aka bugs).",
-    "Admin actions are protected by client - side & server - side validation with JSON Web Tokens.",
+    "Admin actions are protected by client-side & server-side validation with JSON Web Tokens.",
     "Relational database built with Flask, SQLAlchemy, and SQL."
   ],
   links: {

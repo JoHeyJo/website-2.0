@@ -41,12 +41,7 @@ function Portfolio() {
         {Projects.map((project, i) =>
           <ProjectCardView
             key={i}
-            index={i}
-            summary={project.summaryH1}
-            blurb={project.summaryP}
-            projectName={project.name}
-            demoLink={project.links.demo}
-            image={project.image} />
+            {...project} />
         )}
       </Col>
     )

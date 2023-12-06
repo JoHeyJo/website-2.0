@@ -11,7 +11,7 @@ type OverlayCardProp = {
   blurb: string;
 }
 
-/** on hover will render project info & can toggle portfolio view 
+/** on hover will render project info & and action button to toggle portfolio view 
  * 
  * ProjectCardView -> OverlayCard
 */
@@ -30,7 +30,7 @@ function OverlayCard({ index, link, summary, blurb }: OverlayCardProp) {
       <div className="OverlayCard-content">
         <Stack>
           <h1>{summary}</h1>
-          <p>{blurb}</p>
+          <p className="OverlayCard-description">{blurb}</p>
           {/* <p className="OverlayCard-description">React | TypeScript | Python | Flask | SQLAlchemy
             Catalogs and organizes projects and all its corresponding posts (aka bugs).
             Admin actions are protected by client - side & server - side validation with JSON Web Tokens.
@@ -39,7 +39,6 @@ function OverlayCard({ index, link, summary, blurb }: OverlayCardProp) {
             <Button variant="dark" href={link} target="_blank">Demo</Button>
             <Button onClick={handleViewToggle} variant="dark">More Info</Button>
           </div>
-
         </Stack>
       </div>
     </div>
