@@ -4,6 +4,11 @@ export const sections = [
     name: "About"
   }, 
   {
+    link: "",
+    name: "",
+    id: "Nav-resume"
+  }, 
+  {
     link: "Home-Portfolio",
     name: "Portfolio"
   }, 

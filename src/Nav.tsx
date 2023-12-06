@@ -10,7 +10,7 @@ function Nav() {
     <div className="d-none d-md-inline">
       <Navbar id="Nav-navbar" className="flex-column">
         {sections.map((section, i) =>
-          <HashLink key={i} className="Nav-link" to={`#${section.link}`}>{section.name}</HashLink>
+          <HashLink key={i} id={section.id} className="Nav-link" to={`#${section.link}`}>{section.name}</HashLink>
         )}
       </Navbar>
     </div>

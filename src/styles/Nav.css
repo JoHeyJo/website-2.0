@@ -18,6 +18,14 @@
   color: #323232;
 }
 
+#Nav-resume::before {
+  content: "Resume";
+}
+
+#Nav-resume:hover::before {
+  content: "Download";
+}
+
 @media (width < 1315px){
   #Nav-navbar {
     font-size: .85vw;
