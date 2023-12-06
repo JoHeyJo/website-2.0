@@ -7,6 +7,8 @@ import { Project } from './interfaces';
 export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
+  summaryH1:"React Router application",
+  summaryP:"Retro styled application, catalogs projects and corresponding bugs",
   tech: "React | TypeScript | Python | Flask | SQLAlchemy",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
@@ -24,6 +26,8 @@ export const bugly: Project = {
 export const shareBB: Project = {
   name: "Share BnB",
   image: sharebbImg,
+  summaryH1:"",
+  summaryP: "Retro styled application, catalogs projects and corresponding bugs",
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
@@ -41,6 +45,8 @@ export const shareBB: Project = {
 export const portfolioSite: Project = {
   name: "Share BnB",
   image: mySiteImg,
+  summaryH1:"",
+  summaryP: "Retro styled application, catalogs projects and corresponding bugs",
   tech: "React | TypeScript",
   description: "Portfolio website",
   heading: "Displays portfolio projects",
