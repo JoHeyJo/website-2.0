@@ -9,13 +9,14 @@ type OverlayCardProp = {
   link: string;
   header: string;
   summary: string;
+  tech: string;
 }
 
 /** on hover will render project info & and action button to toggle portfolio view 
  * 
  * ProjectCardView -> OverlayCard
 */
-function OverlayCard({ index, link, header, summary }: OverlayCardProp) {
+function OverlayCard({ index, link, header, summary, tech }: OverlayCardProp) {
 
   const { toggleView, setIndex } = useContext(PortfolioContext);
 
@@ -29,8 +30,11 @@ function OverlayCard({ index, link, header, summary }: OverlayCardProp) {
     <div className="OverlayCard-container">
       <div className="OverlayCard-content">
         <Stack>
-          <h1>{header}</h1>
-          <p className="OverlayCard-description">{summary}</p>
+          <div className="d-flex flex-column align-items-center">
+            <h4 className="OverlayCard-header">{header}</h4>
+            <p className="OverlayCard-summary">{summary}</p>
+            <p className="OverlayCard-tech">{tech}</p>
+          </div>
           <div className="OverlayCard-actions">
             <Button variant="dark" href={link} target="_blank">Demo</Button>
             <Button onClick={handleViewToggle} variant="dark">More Info</Button>

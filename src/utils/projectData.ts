@@ -7,9 +7,9 @@ import { Project } from './interfaces';
 export const bugly: Project = {
   name: "Bugly",
   image: buglyImg,
-  cardHeader:"React Router Blog application",
-  cardSummary:"Retro styled application that catalogs projects and corresponding bugs with dynamic interface. Features client-side & server-side authorization",
-  tech: "React | TypeScript | Python | Flask | SQLAlchemy",
+  cardHeader:"Blog Application",
+  cardSummary: "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
+  tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
   description: "Browse projects and their corresponding bugs.",
   heading: "Blog application",
   specs: [
@@ -26,8 +26,8 @@ export const bugly: Project = {
 export const shareBB: Project = {
   name: "Share BnB",
   image: sharebbImg,
-  cardHeader:"",
-  cardSummary: "Retro styled application, catalogs projects and corresponding bugs",
+  cardHeader:"React Router Application",
+  cardSummary: "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
@@ -45,11 +45,11 @@ export const shareBB: Project = {
 export const portfolioSite: Project = {
   name: "Share BnB",
   image: mySiteImg,
-  cardHeader:"",
-  cardSummary: "Retro styled application, catalogs projects and corresponding bugs",
-  tech: "React | TypeScript",
-  description: "Portfolio website",
-  heading: "Displays portfolio projects",
+  cardHeader:"Portfolio Website",
+  cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
+  tech: "React | TypeScript | Bootstrap",
+  description: "Displays collection of diverse projects",
+  heading: "Portfolio website",
   specs: [
     "Fully responsive design.",
     "Dynamic content.",
