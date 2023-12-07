@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import './styles/ContactForm.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import Emailjs from './utils/emailjs';
+
 const contact_form = {
   fromName: '',
   replyTo: '',
@@ -23,10 +25,10 @@ export const ContactForm = () => {
 
   async function sendEmail(e: any) {
     e.preventDefault();
+    Emailjs(e);
   }
 
   function clearForm() { setForm(contact_form) }
-
   return (
     <Row style={{height: "100%"}}>
       <Col xs={12} md={12} lg={7} className='d-flex flex-column justify-content-center'>
