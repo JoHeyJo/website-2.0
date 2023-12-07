@@ -1,3 +1,11 @@
+h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: whitesmoke;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 .TopBanner-bar {
   position: fixed;
   /* this fixes gap on top and left of TopBanner.Necessary?*/
@@ -12,4 +20,5 @@
   /* the width only effects container when position:fixed is not applied */
   width: 100%;
   z-index: 10;
+  background-color: darkcyan;
 }

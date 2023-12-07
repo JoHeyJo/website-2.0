@@ -9,3 +9,8 @@
 .dropdown-menu {
   background: transparent;
 }
+
+.Nav-link:hover {
+  transition: .25s;
+  color: #323232;
+}

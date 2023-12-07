@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #full-stack {
@@ -10,6 +12,7 @@
   font-size: clamp(2rem, 14vw, 20rem);
   line-height: 1;
   white-space: nowrap;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #swe {
@@ -17,6 +20,10 @@
   font-size: clamp(2rem, 14vw, 15rem);
   margin-top: -1rem;
   line-height: 1;
+}
+
+.pipes {
+  color: #323232;
 }
 
 #full-stack,
