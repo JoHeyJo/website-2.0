@@ -9,14 +9,15 @@
 
 #full-stack {
   /* Minimum 2rem, scalable with viewport width, maximum 15rem */
+
   font-size: clamp(2rem, 14vw, 20rem);
   line-height: 1;
   white-space: nowrap;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #swe {
   /* Minimum 1.5rem, scalable with viewport width, maximum 12rem */
+
   font-size: clamp(2rem, 14vw, 15rem);
   margin-top: -1rem;
   line-height: 1;
@@ -28,7 +29,6 @@
 
 #full-stack,
 #swe {
-  font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: -.813rem;
   font-weight: bold;
