@@ -15,7 +15,7 @@ function ProjectCardView({ index, name, image, links, cardHeader, cardSummary }:
     <div className="ProjectCardView-container">
       <img className="ProjectCardView-image" src={image} alt={`${name} image`}/>
       <div className="ProjectCardView-overlay">
-        <OverlayCard index={index} link={links.demo} summary={cardHeader} blurb={cardSummary}/>
+        <OverlayCard index={index} link={links.demo} header={cardHeader} summary={cardSummary}/>
       </div>
     </div>
   )
