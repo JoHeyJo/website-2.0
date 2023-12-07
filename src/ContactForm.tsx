@@ -30,7 +30,6 @@ export const ContactForm = () => {
     if (!form.fromName || !form.replyTo || !form.message) {
       setAlert('Please fill out all fields');
     } else {
-
       try {
         console.log('e.target', form)
         const res = Emailjs(e);
@@ -43,7 +42,7 @@ export const ContactForm = () => {
         setAlert('Email was not sent please try, again.');
       }
     }
-
+    setTimeout(()=> {setAlert(null)},5000)
   }
 
   function clearForm() { setForm(contact_form) }
