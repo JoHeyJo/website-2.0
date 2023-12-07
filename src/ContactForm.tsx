@@ -25,7 +25,23 @@ export const ContactForm = () => {
 
   async function sendEmail(e: any) {
     e.preventDefault();
-    Emailjs(e);
+
+    if (!form.from_name || !form.reply_to || !form.message) {
+      setAlert('Please fill out all fields');
+    } else {
+
+      try {
+        console.log('e.target', form)
+        Emailjs(e);
+        setForm(contact_form);
+        setAlert('Thank you, your message has been sent!');
+      } catch (error) {
+        console.log('>>>>>>', error);
+        setForm(contact_form);
+        setAlert('Email was not sent please try, again.');
+      }
+    }
+
   }
 
   function clearForm() { setForm(contact_form) }
