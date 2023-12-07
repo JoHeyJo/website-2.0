@@ -11,6 +11,5 @@
   padding-top: .625rem;
   /* the width only effects container when position:fixed is not applied */
   width: 100%;
-  background: white;
   z-index: 10;
 }
