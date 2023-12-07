@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import './styles/ContactForm.css'
 import { Row, Col } from 'react-bootstrap';
 import Emailjs from './utils/emailjs';
+import { isConstructorDeclaration } from 'typescript';
 
 const contact_form = {
   fromName: '',
@@ -14,7 +15,7 @@ const contact_form = {
 
 export const ContactForm = () => {
   const [form, setForm] = useState(contact_form);
-  const [alert, setAlert] = useState(null)
+  const [alert, setAlert] = useState<string | null>(null)
 
   function handleChange(e: any) {
     e.preventDefault();
@@ -26,13 +27,14 @@ export const ContactForm = () => {
   async function sendEmail(e: any) {
     e.preventDefault();
 
-    if (!form.from_name || !form.reply_to || !form.message) {
+    if (!form.fromName || !form.replyTo || !form.message) {
       setAlert('Please fill out all fields');
     } else {
 
       try {
         console.log('e.target', form)
-        Emailjs(e);
+        const res = Emailjs(e);
+        console.log("response from Email.js", res)
         setForm(contact_form);
         setAlert('Thank you, your message has been sent!');
       } catch (error) {
