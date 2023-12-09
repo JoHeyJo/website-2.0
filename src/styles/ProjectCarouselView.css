@@ -20,6 +20,7 @@
   padding: 1%;
   font-weight: 400;
 }
+
 .text-tech {
   color: whitesmoke;
   border-left: solid #323232;
@@ -43,14 +44,15 @@
 
 /* Handle font size on smaller displays  */
 @media (max-width: 768px) {
-  .text {
+  .text, .text-note,
+    .text-tech {
     margin-top: 1rem;
     font-size: 2vw;
   }
 }
 
 @media (max-width: 425px) {
-  .text {
+  .text, .text-note, .text-tech {
     font-size: 4vw;
   }
 }
