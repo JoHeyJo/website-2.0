@@ -15,7 +15,7 @@ const contact_form = {
 
 export const ContactForm = () => {
   const [form, setForm] = useState(contact_form);
-  const [alert, setAlert] = useState<string | null>(null)
+  const [alert, setAlert] = useState<string | null>("")
 
   function handleChange(e: any) {
     e.preventDefault();
@@ -42,12 +42,12 @@ export const ContactForm = () => {
         setAlert('Email was not sent please try, again.');
       }
     }
-    setTimeout(()=> {setAlert(null)},5000)
+    setTimeout(() => { setAlert(null) }, 2000)
   }
 
   function clearForm() { setForm(contact_form) }
   return (
-    <Row style={{height: "100%"}}>
+    <Row style={{ height: "100%" }}>
       <Col xs={12} md={12} lg={7} className='d-flex flex-column justify-content-center'>
         <form onSubmit={sendEmail}>
           <div id="ContactForm-user-interface" className="d-flex flex-column ">
@@ -93,15 +93,17 @@ export const ContactForm = () => {
             {/* using Button component submits the wrong data format. error:
           "The 3rd parameter is expected to be the HTML form element or the style selector of form"
         even if the form is passed JSEmail function doesn't accept it. */}
-            <div className='d-flex align-items-baseline'>
-              <input id='ContactForm-submit-button' type="submit" value="Send" />
-              <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
-            </div>
-            {alert &&
-              <div className="alert alert-dark" role="alert">
-                {alert}
+            <div className="d-flex flex-column" style={{ position: 'relative' }}>
+              <div className='d-flex align-items-baseline'>
+                <input id='ContactForm-submit-button' type="submit" value="Send" />
+                <Button className='m-2' variant="outline-dark" onClick={clearForm}>Clear</Button>
               </div>
-            }
+              {alert &&
+                <div className="alert alert-dark" role="alert" >
+                  {alert}
+                </div>
+              }
+            </div>
           </div>
         </form>
       </Col>

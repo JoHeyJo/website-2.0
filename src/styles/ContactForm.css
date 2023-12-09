@@ -4,7 +4,7 @@
 
 #ContactForm-user-interface{
   margin-left: 6rem;
-  padding-bottom:3rem;
+  /* padding-bottom:3rem; */
 }
 
 #ContactForm-submit-button {
@@ -45,4 +45,11 @@ textarea {
   #ContactForm-user-interface {
       margin-left: 0rem;
     }
+}
+
+.alert {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
