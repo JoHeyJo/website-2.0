@@ -36,9 +36,10 @@ function ProjectCarouselView({ projects }: ProjectProps) {
       </Col>
       <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
-          <ul style={{height:"11rem"}}>
-            <li className="text">{projects[index].tech}</li>
+          <ul style={{height:"13rem"}}>
+            <li className="text-tech">{projects[index].tech}</li>
             {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
+            <li className="text-note">NOTE: Heroku server takes a moment to fire up.</li>
           </ul>
           <div className="d-flex justify-content-evenly" >
             <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>

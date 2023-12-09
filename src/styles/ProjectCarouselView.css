@@ -13,11 +13,27 @@
 }
 
 .text {
+  color: whitesmoke;
   border-left: solid #323232;
   font-size: .80vw;
   margin-top: 1%;
   padding: 1%;
   font-weight: 400;
+}
+.text-tech {
+  color: whitesmoke;
+  border-left: solid #323232;
+  font-size: .80vw;
+  margin-top: 1%;
+  padding: 1%;
+  font-weight: 600;
+}
+
+.text-note {
+  font-size: .80vw;
+  margin-top: 1%;
+  padding: 1%;
+  border-left: none;
 }
 
 .carousel-caption {
