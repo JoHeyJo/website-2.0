@@ -14,7 +14,7 @@ export const bugly: Project = {
   heading: "Blog application",
   specs: [
     "Catalogs and organizes projects and all its corresponding posts (aka bugs).",
-    "Admin actions are protected by client-side & server-side validation with JSON Web Tokens.",
+    "Admin actions are protected in the client-side & additional server-side validation with JSON Web Tokens.",
     "Relational database built with Flask, SQLAlchemy, and SQL."
   ],
   links: {
@@ -33,7 +33,7 @@ export const shareBB: Project = {
   heading: "AirBnB clone",
   specs: [
     "Features user signup, authorization, and authentication.",
-    "Auth with JSON Web Tokens & password encryption with BCrypt.",
+    "User actions and routes are protected with JSON Web Tokens & encrypted passwords.",
     "Relational database built with Flask and SQLAlchemy."
   ],
   links: {
@@ -51,8 +51,9 @@ export const portfolioSite: Project = {
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
-    "Fully responsive design.",
-    "Dynamic content.",
+    "Fully responsive with a polished minimalist design that focuses on functionality.",
+    "Integrated with Emailjs. Allows email submissions directly from website.",
+    "Interactive and dynamic content.",
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
