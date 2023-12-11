@@ -4,6 +4,20 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
+  const handleCopy = () => {
+    // Copy the text to clipboard
+    navigator.clipboard.writeText("testing")
+      .then(() => {
+        // Success handling, like showing a message to the user
+        console.log('text copied')
+        alert("Text copied to clipboard!");
+      })
+      .catch(err => {
+        // Error handling
+        console.log("error",err)
+        console.error('Failed to copy text: ', err);
+      });
+  };
   return (
     <>
       <footer id="Footer-top-border">
@@ -11,9 +25,9 @@ function Footer() {
       <section id="Footer-content">
         <div id="Footer-icons">
           <div>
-            <a href="https://linkedin.com/in/joannes-figueroa" target="_blank">
+            <button onClick={handleCopy}>
               <FontAwesomeIcon size="xl" icon={faEnvelope} />
-            </a>
+            </button>
           </div>
           <div>
             <a href="https://github.com/JoHeyJo" target="_blank">
