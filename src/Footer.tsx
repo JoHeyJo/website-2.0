@@ -14,7 +14,7 @@ function Footer() {
       })
       .catch(err => {
         // Error handling
-        console.log("error",err)
+        console.log("error", err)
         console.error('Failed to copy text: ', err);
       });
   };
@@ -25,7 +25,7 @@ function Footer() {
       <section id="Footer-content">
         <div id="Footer-icons">
           <div>
-            <button onClick={handleCopy}>
+            <button id="Footer-copy-email" onClick={handleCopy}>
               <FontAwesomeIcon size="xl" icon={faEnvelope} />
             </button>
           </div>
