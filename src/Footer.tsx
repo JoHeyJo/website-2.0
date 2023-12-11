@@ -2,6 +2,7 @@ import "./styles/Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Overlay from "./Overlay";
 
 function Footer() {
   const handleCopy = () => {
@@ -26,6 +27,7 @@ function Footer() {
         <div id="Footer-icons">
           <div>
             <button id="Footer-copy-email" onClick={handleCopy}>
+              <Overlay />
               <FontAwesomeIcon size="xl" icon={faEnvelope} />
             </button>
           </div>

@@ -1,9 +1,10 @@
-import Button from 'react-bootstrap/Button';
+import React from 'react';
+import { Button } from 'react-bootstrap';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-function TriggerExample() {
-  const renderTooltip = (props) => (
+function Overlay() {
+  const renderTooltip = (props:any) => (
     <Tooltip id="button-tooltip" {...props}>
       Simple tooltip
     </Tooltip>
@@ -20,4 +21,4 @@ function TriggerExample() {
   );
 }
 
-export default TriggerExample;
+export default Overlay;
