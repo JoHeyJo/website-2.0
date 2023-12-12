@@ -2,11 +2,13 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-function Overlay() {
+function PopText() {
   const renderTooltip = (props:any) => (
     <Tooltip id="button-tooltip" {...props}>
-      Simple tooltip
+      Copy email address.
     </Tooltip>
   );
 
@@ -16,9 +18,9 @@ function Overlay() {
       delay={{ show: 250, hide: 400 }}
       overlay={renderTooltip}
     >
-      <Button variant="success">Hover me to see</Button>
+      <FontAwesomeIcon size="xl" icon={faEnvelope} />
     </OverlayTrigger>
   );
 }
 
-export default Overlay;
+export default PopText;

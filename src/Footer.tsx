@@ -1,8 +1,7 @@
 import "./styles/Footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import Overlay from "./Overlay";
+import PopText from "./PopText";
 
 function Footer() {
   const handleCopy = () => {
@@ -11,7 +10,7 @@ function Footer() {
       .then(() => {
         // Success handling, like showing a message to the user
         console.log('text copied')
-        alert("Text copied to clipboard!");
+        // alert("Text copied to clipboard!");
       })
       .catch(err => {
         // Error handling
@@ -27,8 +26,7 @@ function Footer() {
         <div id="Footer-icons">
           <div>
             <button id="Footer-copy-email" onClick={handleCopy}>
-              <Overlay />
-              <FontAwesomeIcon size="xl" icon={faEnvelope} />
+              <PopText />
             </button>
           </div>
           <div>
