@@ -25,9 +25,7 @@ function Footer() {
       <section id="Footer-content">
         <div id="Footer-icons">
           <div>
-            <button id="Footer-copy-email" onClick={handleCopy}>
               <PopText />
-            </button>
           </div>
           <div>
             <a href="https://github.com/JoHeyJo" target="_blank">

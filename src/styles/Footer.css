@@ -31,6 +31,10 @@ a:hover {
   color: grey;
 }
 
+#Footer-copy-email:hover {
+  color: grey;
+}
+
 #Footer-copyright {
   font-size: .75rem;
 }

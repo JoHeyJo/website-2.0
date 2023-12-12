@@ -36,7 +36,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
       </Col>
       <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
-          <ul style={{height:"13rem"}}>
+          <ul>
             <li className="text-tech">{projects[index].tech}</li>
             {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
             <li className="text-note">NOTE: Heroku server takes a moment to fire up.</li>
