@@ -57,6 +57,6 @@ export const portfolioSite: Project = {
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
-    demo: "https://www.joannesfigueroa.com/" //OLD SITE LINK
+    demo: "https://www.joannesfigueroa.com/" 
   }
 }

@@ -43,7 +43,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
           </ul>
           <div className="d-flex justify-content-evenly" >
             <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
-            <Button variant="dark" className="align-self-center" onClick={toggleView}>Demo</Button>
+            <Button variant="dark" className="align-self-center" href={projects[index].links.demo} target="_blank">Demo</Button>
           </div>
         </div>
       </Col>
