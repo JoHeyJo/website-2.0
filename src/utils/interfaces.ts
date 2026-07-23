@@ -1,3 +1,4 @@
+// MIGRATED
 export type Project = {
   name: string;
   image: string;

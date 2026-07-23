@@ -1,3 +1,4 @@
+// MIGRATED
 import { useContext } from "react";
 import { Project } from "./utils/interfaces";
 import './styles/ProjectCarouselView.css'
@@ -9,7 +10,6 @@ import { PortfolioContext } from "./context/user";
 type ProjectProps = {
   projects: Project[];
 }
-
 
 /** Renders individual project image with description
  * 

@@ -1,3 +1,4 @@
+// MIGRATED
 import buglyImg from '../images/buglyImg.png';
 import sharebbImg from '../images/sharebbImg.png';
 import mySiteImg from '../images/mySite.png';
@@ -43,6 +44,24 @@ export const shareBB: Project = {
 }
 
 export const portfolioSite: Project = {
+  name: "Share BnB",
+  image: mySiteImg,
+  cardHeader:"Portfolio Website",
+  cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
+  tech: "React | TypeScript | Bootstrap",
+  description: "Displays collection of diverse projects",
+  heading: "Portfolio website",
+  specs: [
+    "Fully responsive with a polished minimalist design that focuses on functionality.",
+    "Integrated with Emailjs. Allows email submissions directly from website.",
+    "Interactive and dynamic content.",
+  ],
+  links: {
+    github: "https://github.com/JoHeyJo/website-2.0",
+    demo: "https://www.joannesfigueroa.com/" 
+  }
+}
+export const Blog: Project = {
   name: "Share BnB",
   image: mySiteImg,
   cardHeader:"Portfolio Website",

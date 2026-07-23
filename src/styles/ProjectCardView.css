@@ -1,8 +1,12 @@
+/* MIGRATED */
 .ProjectCardView-image {
-  width: 27rem;
-  height: 18rem;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;   /* 4/3, 16/9, 1/1 */
+  object-fit: cover;
 }
-
+/* parent */
 .ProjectCardView-container {
   position: relative;
 }
@@ -10,12 +14,12 @@
 img {
   border: solid #011016;
 }
-
+/* child */
 .ProjectCardView-container .ProjectCardView-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right:0;
   height: 100%;
   display: none; 
   color: #FFF;

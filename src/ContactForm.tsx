@@ -1,9 +1,9 @@
+//  MIGRATED
 import { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import './styles/ContactForm.css'
 import { Row, Col } from 'react-bootstrap';
 import Emailjs from './utils/emailjs';
-import { isConstructorDeclaration } from 'typescript';
 
 const contact_form = {
   fromName: '',

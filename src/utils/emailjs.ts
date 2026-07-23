@@ -1,3 +1,4 @@
+// MIGRATED
 import emailjs from '@emailjs/browser';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_KEY ?? "";

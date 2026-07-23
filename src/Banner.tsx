@@ -1,3 +1,4 @@
+// MIGRATED
 import { useState, useEffect } from "react";
 import './styles/Banner.css'
 import { renderTypeScript, renderFlask, renderPython, renderReact } from "./utils/view";

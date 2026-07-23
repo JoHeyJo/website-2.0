@@ -1,3 +1,4 @@
+//  MIGRATED 
 import React, { useState } from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -8,7 +9,7 @@ import "./styles/Footer.css"
 function PopText() {
   const [text, setText] = useState("Copy email address.");
   const renderTooltip = (props: any) => (
-    <Tooltip id="button-tooltip" {...props}>
+    <Tooltip id="button-tooltip" style={{background:"red"}} {...props}>
       {text}
     </Tooltip>
   );

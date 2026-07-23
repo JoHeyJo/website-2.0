@@ -1,3 +1,4 @@
+// MIGRATED
 import { HashLink } from "react-router-hash-link";
 import { Navbar } from "react-bootstrap";
 import './styles/Nav.css'

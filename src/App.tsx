@@ -1,6 +1,7 @@
+// MIGRATING...
 import { Container, Row, Col } from 'react-bootstrap';
 import { containerStyle, navColStyle, mainColStyle, sectionStyle, rowStyle } from './styles';
-import Bio from './Bio';
+import Bio from './Bio'; 
 import Banner from './Banner';
 import Nav from './Nav';
 import TopBanner from './TopBanner';
