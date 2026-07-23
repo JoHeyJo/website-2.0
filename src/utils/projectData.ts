@@ -3,11 +3,12 @@ import buglyImg from '../images/buglyImg.png';
 import sharebbImg from '../images/sharebbImg.png';
 import mySiteImg from '../images/mySite.png';
 import { Project } from './interfaces';
+// import blog from "*.png"
 
 
 export const bugly: Project = {
   name: "Bugly",
-  image: buglyImg,
+  image: "/product.png",
   cardHeader:"Blog Application",
   cardSummary: "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
   tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
@@ -26,7 +27,7 @@ export const bugly: Project = {
 
 export const shareBB: Project = {
   name: "Share BnB",
-  image: sharebbImg,
+  image: "/blog.png",
   cardHeader:"React Router Application",
   cardSummary: "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
@@ -45,7 +46,7 @@ export const shareBB: Project = {
 
 export const portfolioSite: Project = {
   name: "Share BnB",
-  image: mySiteImg,
+  image: "/docs.png",
   cardHeader:"Portfolio Website",
   cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
   tech: "React | TypeScript | Bootstrap",
