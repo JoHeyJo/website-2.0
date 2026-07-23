@@ -27,7 +27,7 @@ export const bugly: Project = {
 
 export const shareBB: Project = {
   name: "Share BnB",
-  image: "/blog.png",
+  image: "/docs.png",
   cardHeader:"React Router Application",
   cardSummary: "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
   tech: "React | JavaScript | Python | Flask | SQLAlchemy",
@@ -46,7 +46,7 @@ export const shareBB: Project = {
 
 export const portfolioSite: Project = {
   name: "Share BnB",
-  image: "/docs.png",
+  image: "/blog.png",
   cardHeader:"Portfolio Website",
   cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
   tech: "React | TypeScript | Bootstrap",
@@ -63,20 +63,21 @@ export const portfolioSite: Project = {
   }
 }
 export const Blog: Project = {
-  name: "Share BnB",
-  image: mySiteImg,
-  cardHeader:"Portfolio Website",
-  cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
-  tech: "React | TypeScript | Bootstrap",
-  description: "Displays collection of diverse projects",
-  heading: "Portfolio website",
+  name: "Bugly",
+  image: "/bugly.png",
+  cardHeader: "Blog Application",
+  cardSummary:
+    "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
+  tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
+  description: "Browse projects and their corresponding bugs.",
+  heading: "Blog application",
   specs: [
-    "Fully responsive with a polished minimalist design that focuses on functionality.",
-    "Integrated with Emailjs. Allows email submissions directly from website.",
-    "Interactive and dynamic content.",
+    "Catalogs and organizes projects and all its corresponding posts (aka bugs).",
+    "Admin actions are protected in the client-side & additional server-side validation with JSON Web Tokens.",
+    "Relational database built with Flask, SQLAlchemy, and SQL.",
   ],
   links: {
-    github: "https://github.com/JoHeyJo/website-2.0",
-    demo: "https://www.joannesfigueroa.com/" 
-  }
-}
+    github: "https://github.com/JoHeyJo/bugly",
+    demo: "https://bugly-olive.vercel.app/",
+  },
+};
