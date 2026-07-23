@@ -9,7 +9,7 @@ type ProjectCardProp = Project & {
 
 /** Project Image displayed in thumbnail view
  * 
- * Project -> ProjectCardView -> OverlayCard
+ * Portfolio -> ProjectCardView -> OverlayCard
  */
 function ProjectCardView({ index, name, image, links, cardHeader, cardSummary, tech }: ProjectCardProp) {
   return (
