@@ -1,13 +1,13 @@
 // MIGRATED
 import { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { bugly, shareBB, portfolioSite, Blog } from "./utils/projectData";
+import { PRODUCT, DOCS, BUGLY, BLOG } from "./utils/projectData";
 import "./styles/Portfolio.css";
 import { PortfolioContextType, PortfolioContext } from "./context/user";
 import ProjectCardView from "./ProjectCardView";
 import ProjectCarouselView from "./ProjectCarouselView";
 
-const Projects = [bugly, shareBB, portfolioSite, Blog];
+const Projects = [PRODUCT, DOCS, BUGLY, BLOG];
 
 /** Displays portfolio sites cards as a collection or carousel view.
  *
