@@ -14,9 +14,19 @@ export const PRODUCT: Project = {
   specs: [
     <>
       <span className="fw-bold">Theme-aware dark mode:</span> Reads the
-      visitor's system preference via window.matchMedia and persists manual
-      overrides in localStorage, so the chosen theme survives refreshes and
-      return visits.
+      visitor's system preference via <code>window.matchMedia</code> and
+      persists manual overrides in <code>localStorage</code>, so the chosen
+      theme survives refreshes and return visits.
+    </>,
+    <>
+      <span className="fw-bold">Guided navigation:</span>{" "}
+      <code>React Router</code> with <code>HashLink</code> drives smooth
+      scroll-to-section jumps and links each feature to its supporting
+      documentation.
+    </>,
+    <>
+      <span className="fw-bold">Production deployment:</span> Hosted on Vercel
+      with a custom subdomain routed through AWS Route 53.
     </>,
   ],
   links: {
