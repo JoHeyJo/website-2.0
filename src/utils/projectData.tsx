@@ -1,24 +1,23 @@
 // MIGRATED
-import buglyImg from '../images/buglyImg.png';
-import sharebbImg from '../images/sharebbImg.png';
-import mySiteImg from '../images/mySite.png';
 import { Project } from './interfaces';
-
 
 export const PRODUCT: Project = {
   name: "product",
   image: "/product.png",
   cardHeader: "Product app",
   cardSummary:
-    "Component driven React single-page application. Polished interface showcases product features and details.",
-  tech: "React | TypeScript | Tailwind | Vercel",
+    "A single-page product showcase built with React and Vite, leading with a hero demo video and scroll through featured sections that link straight to documentation and product sign-up. Responsive and theme-aware, it turns a product pitch into a fast, self-guided walkthrough.",
+  tech: "React | TypeScript | Tailwind | Vercel | AWS (Route 53)",
   description:
-    "Component driven React single-page application. Polished interface showcases product features and details.",
+    "A single-page product showcase built with React and Vite. Leads with a hero demo video, scroll through featured sections that link straight to documentation and product sign-up. Responsive and theme-aware, it turns a product pitch into a fast, self-guided walkthrough.",
   heading: "Product site",
   specs: [
-    "Smooth scroll-driven layout anchored by an embedded product demo.",
-    "Responsive, dark-mode-ready design adapts across devices and themes.",
-    "Linked to supporting resources for a more robust customer experience.",
+    <>
+      <span className="fw-bold">Theme-aware dark mode:</span> Reads the
+      visitor's system preference via window.matchMedia and persists manual
+      overrides in localStorage, so the chosen theme survives refreshes and
+      return visits.
+    </>,
   ],
   links: {
     github: "https://github.com/JoHeyJo/sling-it-product-site",
@@ -29,7 +28,7 @@ export const PRODUCT: Project = {
 export const DOCS: Project = {
   name: "docs",
   image: "/docs.png",
-  cardHeader: "Documentation site",
+  cardHeader: "Documentation website",
   cardSummary:
     "Browser app with dynamic SVG braces anchoring user to selected menu. Redraws itself as user clicks around or window resize.",
   tech: "React | Typescript | Tailwind | Vercel",
@@ -48,17 +47,17 @@ export const DOCS: Project = {
 };
 
 export const BLOG: Project = {
-  name: "Share BnB",
+  name: "blog",
   image: "/blog.png",
-  cardHeader:"Portfolio Website",
-  cardSummary: "Single Page Application featuring a fully responsive design and a collection of diverse projects",
+  cardHeader:"Blog website",
+  cardSummary: "Blog application that tracks product features: In progress, Planned, and Shipped.",
   tech: "React | TypeScript | Bootstrap",
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
-    "Fully responsive with a polished minimalist design that focuses on functionality.",
-    "Integrated with Emailjs. Allows email submissions directly from website.",
-    "Interactive and dynamic content.",
+    "Interactive design toggles between grid and list view.",
+    "Thoughtfully designed making navigating and searching through cards a seamless experience.",
+    "",
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
