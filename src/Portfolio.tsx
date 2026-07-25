@@ -7,7 +7,7 @@ import { PortfolioContextType, PortfolioContext } from "./context/user";
 import ProjectCardView from "./ProjectCardView";
 import ProjectCarouselView from "./ProjectCarouselView";
 
-const Projects = [PRODUCT, DOCS, BUGLY, BLOG];
+const Projects = [PRODUCT, DOCS, BLOG, BUGLY];
 
 /** Displays portfolio sites cards as a collection or carousel view.
  *

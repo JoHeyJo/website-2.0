@@ -8,17 +8,17 @@ import { Project } from './interfaces';
 export const PRODUCT: Project = {
   name: "product",
   image: "/product.png",
-  cardHeader: "Product site",
+  cardHeader: "Product app",
   cardSummary:
-    "Polished React single-page application showcases product features and details.",
+    "Component driven React single-page application. Polished interface showcases product features and details.",
   tech: "React | TypeScript | Tailwind | Vercel",
   description:
-    "Polished React single-page application showcases product features and details.",
+    "Component driven React single-page application. Polished interface showcases product features and details.",
   heading: "Product site",
   specs: [
     "Smooth scroll-driven layout anchored by an embedded product demo.",
-    "Responsive, dark-mode-ready design adapts across devices.",
-    "Linked to supporting documentation for a more robust customer experience.",
+    "Responsive, dark-mode-ready design adapts across devices and themes.",
+    "Linked to supporting resources for a more robust customer experience.",
   ],
   links: {
     github: "https://github.com/JoHeyJo/sling-it-product-site",
@@ -29,16 +29,16 @@ export const PRODUCT: Project = {
 export const DOCS: Project = {
   name: "docs",
   image: "/docs.png",
-  cardHeader: "React Router Application",
+  cardHeader: "Documentation site",
   cardSummary:
-    "Showcases a wide range of features implemented by React's functional component system providing an engaging user experience. Integrated with AWS(S3) enabling user photo uploads.",
-  tech: "React | JavaScript | Python | Flask | SQLAlchemy",
+    "Browser app with dynamic SVG braces anchoring user to selected menu. Redraws itself as user clicks around or window resize.",
+  tech: "React | Typescript | Tailwind | Vercel",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
   specs: [
-    "Features user signup, authorization, and authentication.",
-    "User actions and routes are protected with JSON Web Tokens & encrypted passwords.",
-    "Relational database built with Flask and SQLAlchemy.",
+    "Self-measuring SVG connector so its tip stays locked to selected item through any reflow.",
+    "Thoughtful, subtle, and purposeful animation ensures a smooth user experience.",
+    "React, Typescript, and Tailwind leverage class driven dark mode with a single root toggle.",
   ],
   links: {
     github:
