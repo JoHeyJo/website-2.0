@@ -40,14 +40,23 @@ export const DOCS: Project = {
   image: "/docs.png",
   cardHeader: "Documentation website",
   cardSummary:
-    "Browser app with dynamic SVG braces anchoring user to selected menu. Redraws itself as user clicks around or window resize.",
+    "An interactive documentation browser styled like an unfolding code block. A left-hand directory tree drives a dynamically rendered content panel, threaded together by a hand-drawn SVG connector that redraws itself to stay locked to whatever the user selects - giving the whole page a docs-meets-code feel that stays fluid through any reflow.",
   tech: "React | Typescript | Tailwind | Vercel",
   description: "Create user, browse or add listings!",
   heading: "AirBnB clone",
   specs: [
-    "Self-measuring SVG connector so its tip stays locked to selected item through any reflow.",
-    "Thoughtful, subtle, and purposeful animation ensures a smooth user experience.",
-    "React, Typescript, and Tailwind leverage class driven dark mode with a single root toggle.",
+    <>
+      <span className="fw-bold">Self-measuring SVG connector:</span> A brace
+      anchored to the active menu item measures its own geometry and redraws so
+      its tip stays locked to the target through clicks, reflows, and window
+      resizes.
+    </>,
+    <>
+      <span className="fw-bold">Dynamic-detail navigation:</span> A directory
+      tree on the left renders content, with
+      <code>lucide-react</code> and FontAwesome icons dynamically marking the selected
+      directory giving it a more immersive aesthetic.
+    </>,
   ],
   links: {
     github:
@@ -61,7 +70,7 @@ export const BLOG: Project = {
   image: "/blog.png",
   cardHeader:"Blog website",
   cardSummary: "Blog application that tracks product features: In progress, Planned, and Shipped.",
-  tech: "React | TypeScript | Bootstrap",
+  tech: "React | TypeScript | Tailwind",
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
