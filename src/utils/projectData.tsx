@@ -1,5 +1,5 @@
 // MIGRATED
-import { Project } from './interfaces';
+import { Project } from "./interfaces";
 
 export const PRODUCT: Project = {
   name: "product",
@@ -54,8 +54,15 @@ export const DOCS: Project = {
     <>
       <span className="fw-bold">Dynamic-detail navigation:</span> A directory
       tree on the left renders content, with
-      <code>lucide-react</code> and FontAwesome icons dynamically marking the selected
-      directory giving it a more immersive aesthetic.
+      <code>lucide-react</code> and FontAwesome icons dynamically marking the
+      selected directory giving it a more immersive aesthetic.
+    </>,
+    <>
+      <span className="fw-bold">Purpose-driven design:</span> The interface
+      mirrors a docs-meets-code aesthetic, with navigation instructions for the
+      product surfaced in "code blocks" — the way a developer reads and
+      implements from documentation — while self-referencing links resolve terms
+      in place to keep the content lean.
     </>,
   ],
   links: {
@@ -68,8 +75,9 @@ export const DOCS: Project = {
 export const BLOG: Project = {
   name: "blog",
   image: "/blog.png",
-  cardHeader:"Blog website",
-  cardSummary: "Blog application that tracks product features: In progress, Planned, and Shipped.",
+  cardHeader: "Blog website",
+  cardSummary:
+    "Blog application that tracks product features: In progress, Planned, and Shipped.",
   tech: "React | TypeScript | Tailwind",
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
@@ -80,9 +88,9 @@ export const BLOG: Project = {
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
-    demo: "https://www.joannesfigueroa.com/" 
-  }
-}
+    demo: "https://www.joannesfigueroa.com/",
+  },
+};
 export const BUGLY: Project = {
   name: "Bugly",
   image: "/bugly.png",
