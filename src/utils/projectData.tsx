@@ -77,18 +77,32 @@ export const BLOG: Project = {
   image: "/blog.png",
   cardHeader: "Blog website",
   cardSummary:
-    "Blog application that tracks product features: In progress, Planned, and Shipped.",
+    "A product updates and roadmap page that organizes every release into filterable tickets — shipped, in progress, or planned — viewable as a grid or a list. Search, status filters, and richly detailed cards turn a changelog into a browsable, self-serve product history.",
   tech: "React | TypeScript | Tailwind",
   description: "Displays collection of diverse projects",
   heading: "Portfolio website",
   specs: [
-    "Interactive design toggles between grid and list view.",
-    "Thoughtfully designed making navigating and searching through cards a seamless experience.",
-    "",
+    <>
+      <span className="fw-bold">Grid/list view toggle:</span> Switches the same
+      ticket data between a card grid and a linear list, letting users browse
+      the roadmap in whichever density suits them.
+    </>,
+    <>
+      <span className="fw-bold">Memoized search and filtering:</span> Combines
+      free-text search with status filters (shipped, in progress, planned)
+      utilizing <code>useMemo</code>, so results update instantly without
+      recomputing on every render.
+    </>,
+    <>
+      <span className="fw-bold">Data-driven ticket model:</span> Cards render
+      from a typed schema: status, version, tags, linked resources, and
+      pull-request references — populated from a JSON source. So content layer
+      stays decoupled from the UI.
+    </>,
   ],
   links: {
     github: "https://github.com/JoHeyJo/website-2.0",
-    demo: "https://www.joannesfigueroa.com/",
+    demo: "https://product.slingitdrinks.com/blog",
   },
 };
 export const BUGLY: Project = {
