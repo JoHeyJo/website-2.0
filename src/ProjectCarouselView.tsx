@@ -66,7 +66,7 @@ function ProjectCarouselView({ projects }: ProjectProps) {
               href={projects[index].links.demo}
               target="_blank"
             >
-              Demo
+              Visit
             </Button>
           </div>
         </div>
