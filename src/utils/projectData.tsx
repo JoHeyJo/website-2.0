@@ -110,27 +110,28 @@ export const BLOG: Project = {
 export const BUGLY: Project = {
   name: "Bugly",
   image: "/bugly.png",
-  cardHeader: "Blog Application",
+  cardHeader: "Full-Stack Bug Tracker",
   cardSummary:
     "Full-stack bug tracker with a retro-minimalist interface back by a relational Flask backend. Projects and their associated bug posts are cataloged, organized, and tracked live — with authenticated admin actions guarding every write operation behind JSON Web Tokens.",
   tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap | Heroku",
   description:
     "Full-stack bug tracker with a retro-minimalist interface back by a relational Flask backend. Projects and their associated bug posts are cataloged, organized, and tracked live — with authenticated admin actions guarding every write operation behind JSON Web Tokens.",
-  heading: "Blog application",
+  heading: "Full-Stack Bug Tracker",
   specs: [
     <>
-      <span className="fw-bold">Token-based authentication:</span> Admin actions are gated
-      client-side and validated server-side with JSON Web Tokens, so only
-      authenticated users reach protected operations.
+      <span className="fw-bold">Token-based authentication:</span> Admin actions
+      are gated client-side and validated server-side with JSON Web Tokens, so
+      only authenticated users reach protected operations.
     </>,
     <>
-      <span className="fw-bold">RESTful CRUD API:</span> A Flask backend exposes full create, read,
-      update, and delete operations through structured REST routes, driving
-      every change to projects and their bug posts.
+      <span className="fw-bold">RESTful CRUD API:</span> A Flask backend exposes
+      full create, read, update, and delete operations through structured REST
+      routes, driving every change to projects and their bug posts.
     </>,
     <>
-      <span className="fw-bold">Relational data model:</span> SQLAlchemy maps projects to their
-      corresponding bug posts as related records in a SQL database.
+      <span className="fw-bold">Relational data model:</span> SQLAlchemy maps
+      projects to their corresponding bug posts as related records in a SQL
+      database.
     </>,
   ],
   links: {
