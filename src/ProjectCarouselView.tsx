@@ -23,32 +23,56 @@ function ProjectCarouselView({ projects }: ProjectProps) {
     <Row className="justify-content-end">
       <Col md={6}>
         <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
-          {projects.map((project: Project) =>
+          {projects.map((project: Project) => (
             <Carousel.Item>
-              <img className="ProjectCarouselView-image" src={project.image} alt={`${project.name}`} />
+              <img
+                className="ProjectCarouselView-image"
+                src={project.image}
+                alt={`${project.name}`}
+              />
               <Carousel.Caption>
                 <h3>{project.heading}</h3>
                 <p>{project.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
-          )}
+          ))}
         </Carousel>
       </Col>
       <Col md={4}>
         <div className="ProjectCarouselView-text-box ">
           <ul>
             <li className="text-tech">{projects[index].tech}</li>
-            {projects[index].specs.map((detail) => <li className="text">{detail}</li>)}
-            <li className="text-note">NOTE: Heroku server takes a moment to fire up.</li>
+            {projects[index].specs.map((detail) => (
+              <li className="text">{detail}</li>
+            ))}
+            {projects[index].name === "Bugly" &&
+            (
+              <li className="text-note">
+                NOTE: Heroku server takes a moment to fire up.
+              </li>
+            )}
           </ul>
-          <div className="d-flex justify-content-evenly" >
-            <Button variant="dark" className="align-self-center" onClick={toggleView}>View all</Button>
-            <Button variant="dark" className="align-self-center" href={projects[index].links.demo} target="_blank">Demo</Button>
+          <div className="d-flex justify-content-evenly">
+            <Button
+              variant="dark"
+              className="align-self-center"
+              onClick={toggleView}
+            >
+              View all
+            </Button>
+            <Button
+              variant="dark"
+              className="align-self-center"
+              href={projects[index].links.demo}
+              target="_blank"
+            >
+              Demo
+            </Button>
           </div>
         </div>
       </Col>
     </Row>
-  )
+  );
 }
 
 export default ProjectCarouselView;
