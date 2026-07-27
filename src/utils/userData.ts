@@ -6,6 +6,6 @@ export const user = {
     "I'm motivated by the creative process of problem solving.",
     "I build robust and user-friendly applications with intuitive UI design",
     "I contribute meaningful impact through thoughtful and creative programming.",
-    "Previous bar industry veteran and graduate of Rithm - Full Stack Web Development.",
+    "Past Life - bartender, bar manager. Graduate of Rithm School of Full Stack Web Development.",
   ],
 };
