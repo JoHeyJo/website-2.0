@@ -4,19 +4,19 @@ import { Project } from "./interfaces";
 export const PRODUCT: Project = {
   name: "product",
   image: "/product.png",
-  cardHeader: "Product app",
+  cardHeader: "Product Launch Site",
   cardSummary:
     "A single-page product showcase built with React and Vite, leading with a hero demo video and scroll through featured sections that link straight to documentation and product sign-up. Responsive and theme-aware, it turns a product pitch into a fast, self-guided walkthrough.",
   tech: "React | TypeScript | Tailwind | Vercel | AWS (Route 53)",
   description:
     "A single-page product showcase built with React and Vite. Leads with a hero demo video, scroll through featured sections that link straight to documentation and product sign-up. Responsive and theme-aware, it turns a product pitch into a fast, self-guided walkthrough.",
-  heading: "Product site",
+  heading: "Product Launch Site",
   specs: [
     <>
       <span className="fw-bold">Theme-aware dark mode:</span> Reads the
       visitor's system preference via <code>window.matchMedia</code> and
       persists manual overrides in <code>localStorage</code>, so the chosen
-      theme survives refreshes and return visits.
+      theme persists across refreshes and return visits.
     </>,
     <>
       <span className="fw-bold">Guided navigation:</span>{" "}
@@ -38,12 +38,13 @@ export const PRODUCT: Project = {
 export const DOCS: Project = {
   name: "docs",
   image: "/docs.png",
-  cardHeader: "Documentation website",
+  cardHeader: "Interactive Documentation Browser",
   cardSummary:
     "An interactive documentation browser styled like an unfolding code block. A left-hand directory tree drives a dynamically rendered content panel, threaded together by a hand-drawn SVG connector that redraws itself to stay locked to whatever the user selects - giving the whole page a docs-meets-code feel that stays fluid through any reflow.",
   tech: "React | Typescript | Tailwind | Vercel",
-  description: "Create user, browse or add listings!",
-  heading: "AirBnB clone",
+  description:
+    "An interactive documentation browser styled like an unfolding code block. A left-hand directory tree drives a dynamically rendered content panel, threaded together by a hand-drawn SVG connector that redraws itself to stay locked to whatever the user selects - giving the whole page a docs-meets-code feel that stays fluid through any reflow.",
+  heading: "Interactive Documentation Browser",
   specs: [
     <>
       <span className="fw-bold">Self-measuring SVG connector:</span> A brace
@@ -75,12 +76,13 @@ export const DOCS: Project = {
 export const BLOG: Project = {
   name: "blog",
   image: "/blog.png",
-  cardHeader: "Blog website",
+  cardHeader: "Product Roadmap & Changelog",
   cardSummary:
     "A product updates and roadmap page that organizes every release into filterable tickets — shipped, in progress, or planned — viewable as a grid or a list. Search, status filters, and richly detailed cards turn a changelog into a browsable, self-serve product history.",
-  tech: "React | TypeScript | Tailwind",
-  description: "Displays collection of diverse projects",
-  heading: "Portfolio website",
+  tech: "React | TypeScript | Tailwind | Vercel",
+  description:
+    "A product updates and roadmap page that organizes every release into filterable tickets — shipped, in progress, or planned — viewable as a grid or a list. Search, status filters, and richly detailed cards turn a changelog into a browsable, self-serve product history.",
+  heading: "Product Roadmap & Changelog",
   specs: [
     <>
       <span className="fw-bold">Grid/list view toggle:</span> Switches the same
@@ -110,17 +112,29 @@ export const BUGLY: Project = {
   image: "/bugly.png",
   cardHeader: "Blog Application",
   cardSummary:
-    "React application that catalogs projects and corresponding bugs. Retro minimalist design aesthetic with modern dynamic functionality. Currently active and tracking progress on live projects",
-  tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap",
-  description: "Browse projects and their corresponding bugs.",
+    "Full-stack bug tracker with a retro-minimalist interface back by a relational Flask backend. Projects and their associated bug posts are cataloged, organized, and tracked live — with authenticated admin actions guarding every write operation behind JSON Web Tokens.",
+  tech: "React | TypeScript | Python | Flask | SQLAlchemy | Bootstrap | Heroku",
+  description:
+    "Full-stack bug tracker with a retro-minimalist interface back by a relational Flask backend. Projects and their associated bug posts are cataloged, organized, and tracked live — with authenticated admin actions guarding every write operation behind JSON Web Tokens.",
   heading: "Blog application",
   specs: [
-    "Catalogs and organizes projects and all its corresponding posts (aka bugs).",
-    "Admin actions are protected in the client-side & additional server-side validation with JSON Web Tokens.",
-    "Relational database built with Flask, SQLAlchemy, and SQL.",
+    <>
+      <span className="fw-bold">Token-based authentication:</span> Admin actions are gated
+      client-side and validated server-side with JSON Web Tokens, so only
+      authenticated users reach protected operations.
+    </>,
+    <>
+      <span className="fw-bold">RESTful CRUD API:</span> A Flask backend exposes full create, read,
+      update, and delete operations through structured REST routes, driving
+      every change to projects and their bug posts.
+    </>,
+    <>
+      <span className="fw-bold">Relational data model:</span> SQLAlchemy maps projects to their
+      corresponding bug posts as related records in a SQL database.
+    </>,
   ],
   links: {
     github: "https://github.com/JoHeyJo/product",
-    demo: "https://product-olive.vercel.app/",
+    demo: "https://bugly-olive.vercel.app/users/1",
   },
 };
